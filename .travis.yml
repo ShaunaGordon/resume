@@ -1,12 +1,16 @@
-language: javascript
+language: node_js
+node_js:
+  - "node"
 branches:
   only:
   - master
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version version-number
+  - export PATH="$HOME/.yarn/bin:$PATH"
 install:
-- sudo apt-get install -y yarn
-- yarn install
+  - yarn install
 script:
-- yarn build
+  - yarn build
 deploy:
   provider: pages
   local_dir: ./dist
@@ -15,3 +19,7 @@ deploy:
   target_branch: gh-pages
   on:
     branch: master
+cache:
+    yarn: true
+    directories:
+        - "node_modules"
