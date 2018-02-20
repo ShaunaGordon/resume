@@ -12,7 +12,8 @@ install:
 script:
   - yarn build
 after_script:
-  - cp CNAME ./dist/ # copy CNAME file to root of dist so we go to the subdomain
+  - cp CNAME ./dist/CNAME # copy CNAME file to root of dist so we go to the subdomain
+  - ls ./dist
 deploy:
   provider: pages
   local_dir: ./dist
