@@ -3,7 +3,7 @@
       <header>
           <h2>Skills</h2>
       </header>
-      <article>
+      <article class="donuts">
           <donut v-for="(value, key) in skills" :name="key" :items="value" :key="key"></donut>
       </article>
   </section>
@@ -26,6 +26,20 @@ export default {
                     html: 10,
                     css: 10
                 },
+                paradigms: {
+                    oop: 10,
+                    functional: 1,
+                    mvc: 10
+                },
+                devops: {
+                    linux: 8,
+                    macos: 4,
+                    mysql: 8,
+                    ansible: 3,
+                    docker: 1,
+                    forge: 1,
+                    vagrant: 4
+                },
                 php: {
                     php7: 2,
                     php5: 8,
@@ -42,29 +56,22 @@ export default {
                     sass: 4,
                     less: 2
                 },
-                paradigms: {
-                    oop: 10,
-                    functional: 1,
-                    mvc: 10
-                },
-                devops: {
-                    linux: 8,
-                    macos: 4,
-                    mysql: 8,
-                    ansible: 3,
-                    docker: 1,
-                    forge: 1,
-                    vagrant: 4
-                },
+                test: {
+                    foo: 4,
+                    bar: 8,
+                    baz: 10
+                }
             }
         }
     }
 }
 </script>
 
-<style>
-    article {
+<style scoped>
+    .donuts {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 330px));
+        align-items: center;
+        justify-content: space-around;
     }
 </style>

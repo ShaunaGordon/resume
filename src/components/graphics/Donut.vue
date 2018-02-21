@@ -37,9 +37,9 @@ export default {
                 .sort(null)
                 .padAngle(.01);
 
-            let w = 400, h = 400;
+            let w = 300, h = 300;
             let canvasWidth = w * 1.1, canvasHeight = h * 1.1;
-            let donutWidth = 50;
+            let donutWidth = 35;
             let radius = Math.min(w/1.5, h) / 2;
 
             let color = d3.scaleSequential(d3.interpolateViridis);
@@ -49,8 +49,8 @@ export default {
                     .outerRadius(radius);
 
             let outerArc = d3.arc()
-                    .innerRadius(radius * 1.23)
-                    .outerRadius(radius * 1.23);
+                    .innerRadius(radius * 1.26)
+                    .outerRadius(radius * 1.26);
 
             let zoomArc = d3.arc()
                     .innerRadius((radius - donutWidth) * 1.1)
