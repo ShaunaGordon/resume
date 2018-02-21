@@ -67,16 +67,6 @@ export default {
 </script>
 
 <style scoped>
-header p {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    margin-top: -1.5rem;
-    max-width: 40rem;
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    opacity: .75;
-    font-weight: 100;
-}
-
 a span {
     border-bottom: 1px dotted;
 }

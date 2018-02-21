@@ -56,11 +56,6 @@ export default {
                     sass: 4,
                     less: 2
                 },
-                test: {
-                    foo: 4,
-                    bar: 8,
-                    baz: 10
-                }
             }
         }
     }

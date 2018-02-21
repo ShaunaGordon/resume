@@ -53,6 +53,16 @@ header {
     font-family: 'Forum', Helvetica, Arial, sans-serif;
 }
 
+header p {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: -1.5rem;
+    max-width: 40rem;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    opacity: .75;
+    font-weight: 100;
+}
+
 a {
     text-decoration: none;
     color: #754668;

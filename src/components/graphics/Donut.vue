@@ -77,15 +77,17 @@ export default {
                         .on('mouseenter', function(d) {
                             d3.select(this)
                                 .transition()
-                                .duration(1000)
+                                .duration(800)
                                 .attr('d', zoomArc);
                         })
                         .on('mouseleave', function(d) {
                             d3.select(this)
                                 .transition()
-                                .duration(1000)
+                                .duration(800)
                                 .attr('d', arc);
-                        });
+                        })
+                        .append('svg:title')
+                        .text((d) => `${d.data.years} ` + (d.data.years > 1 ? 'years' : 'year'));
 
             let outerPath = svg.select('.labels').selectAll('.path')
                         .data(pie(dataset))
