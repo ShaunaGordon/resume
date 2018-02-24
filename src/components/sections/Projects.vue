@@ -44,17 +44,17 @@ export default {
                         <p>This online resume is built on VueJS, using Webpack for building and Babel for transpiling ES6, and D3 for creating the charts. It's then built with Yarn, via TravisCI, and deployed to GitHub Pages. </p>
                     `
                 },
-                // {
-                //     name: "Soaper's Friend",
-                //     tech: {
-                //         ruby: 'Ruby',
-                //         rails: 'Rails',
-                //         docker: 'Docker'
-                //     },
-                //     source: 'https://github.com/ShaunaGordon/soapers-friend',
-                //     info: `<p>Soaper's Friend is intended to be a multi-platform application for soapmakers to track inventory, starting with a Rails web app.</p>
-                //     `
-                // }
+                {
+                    name: "Soaper's Friend",
+                    tech: {
+                        ruby: 'Ruby',
+                        rails: 'Rails',
+                        docker: 'Docker'
+                    },
+                    source: 'https://github.com/ShaunaGordon/soapers-friend',
+                    info: `<p>Soaper's Friend is intended to be a multi-platform application for soapmakers to track inventory, starting with a Rails web app.</p>
+                    `
+                }
             ]
         }
     },
