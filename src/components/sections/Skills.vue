@@ -55,7 +55,7 @@ export default {
                     vanilla: 10,
                     sass: 4,
                     less: 2
-                },
+                }
             }
         }
     }

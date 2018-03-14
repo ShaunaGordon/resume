@@ -1,7 +1,7 @@
 <template>
-  <div :id="id">
+<div :id="id">
 
-  </div>
+</div>
 </template>
 
 <script>
@@ -34,82 +34,84 @@ export default {
             let pie = d3.pie()
                 .value(d => d.years)
                 .sort(null)
-                .padAngle(.01);
+                .padAngle(0.01);
 
-            let w = 300, h = 300;
-            let canvasWidth = w * 1.1, canvasHeight = h * 1.1;
+            let w = 300;
+            let h = 300;
+            let canvasWidth = w * 1.1;
+            let canvasHeight = h * 1.1;
             let donutWidth = 35;
-            let radius = Math.min(w/1.5, h) / 2;
+            let radius = Math.min(w / 1.5, h) / 2;
 
             let color = d3.scaleSequential(d3.interpolateViridis);
 
             let arc = d3.arc()
-                    .innerRadius(radius - donutWidth)
-                    .outerRadius(radius);
+                .innerRadius(radius - donutWidth)
+                .outerRadius(radius);
 
             let outerArc = d3.arc()
-                    .innerRadius(radius * 1.26)
-                    .outerRadius(radius * 1.26);
+                .innerRadius(radius * 1.26)
+                .outerRadius(radius * 1.26);
 
             let zoomArc = d3.arc()
-                    .innerRadius((radius - donutWidth) * 1.1)
-                    .outerRadius(radius * 1.2);
+                .innerRadius((radius - donutWidth) * 1.1)
+                .outerRadius(radius * 1.2);
 
             let svg = d3.select(`#${this.id}`)
-                        .append("svg")
-                        .attr('width', canvasWidth)
-                        .attr('height', canvasHeight);
+                .append('svg')
+                .attr('width', canvasWidth)
+                .attr('height', canvasHeight);
 
-            svg.append('g').attr('class', 'slices').attr('transform', 'translate('+canvasWidth/2+','+canvasHeight/2+')');
-            svg.append('g').attr('class', 'labels').attr('transform', 'translate('+canvasWidth/2+','+canvasHeight/2+')');
-            svg.append('g').attr('class', 'lines').attr('transform', 'translate('+canvasWidth/2+','+canvasHeight/2+')');
-            svg.append('g').attr('class', 'name').attr('transform', 'translate('+canvasWidth/2+','+canvasHeight/2+')');
+            svg.append('g').attr('class', 'slices').attr('transform', 'translate(' + canvasWidth / 2 + ',' + canvasHeight / 2 + ')');
+            svg.append('g').attr('class', 'labels').attr('transform', 'translate(' + canvasWidth / 2 + ',' + canvasHeight / 2 + ')');
+            svg.append('g').attr('class', 'lines').attr('transform', 'translate(' + canvasWidth / 2 + ',' + canvasHeight / 2 + ')');
+            svg.append('g').attr('class', 'name').attr('transform', 'translate(' + canvasWidth / 2 + ',' + canvasHeight / 2 + ')');
 
             svg.select('.slices').selectAll('.slice')
-                    .data(pie(dataset))
-                    .enter()
-                    .append('path')
-                        .attr('id', (d,i) => `slice-${d.data.name}-${i}`)
-                        .attr('class', 'slice')
-                        .attr('d', arc)
-                        .attr('fill', (d) => color(d.data.name.length * (d.data.index + 1) * d.data.years * 0.005))
-                        .on('mouseenter', function() {
-                            d3.select(this)
-                                .transition()
-                                .duration(800)
-                                .attr('d', zoomArc);
-                        })
-                        .on('mouseleave', function() {
-                            d3.select(this)
-                                .transition()
-                                .duration(800)
-                                .attr('d', arc);
-                        })
-                        .append('svg:title')
-                        .text((d) => `${d.data.years} ` + (d.data.years > 1 ? 'years' : 'year'));
+                .data(pie(dataset))
+                .enter()
+                .append('path')
+                .attr('id', (d, i) => `slice-${d.data.name}-${i}`)
+                .attr('class', 'slice')
+                .attr('d', arc)
+                .attr('fill', (d) => color(d.data.name.length * (d.data.index + 1) * d.data.years * 0.005))
+                .on('mouseenter', function() {
+                    d3.select(this)
+                        .transition()
+                        .duration(800)
+                        .attr('d', zoomArc);
+                })
+                .on('mouseleave', function() {
+                    d3.select(this)
+                        .transition()
+                        .duration(800)
+                        .attr('d', arc);
+                })
+                .append('svg:title')
+                .text((d) => `${d.data.years} ` + (d.data.years > 1 ? 'years' : 'year'));
 
             svg.select('.labels').selectAll('.path')
-                        .data(pie(dataset))
-                        .enter()
-                        .append('path')
-                        .attr('id', (d,i) => `label-${d.data.name}-${i}`)
-                        .attr('d', outerArc)
-                        .attr('class', 'path');
+                .data(pie(dataset))
+                .enter()
+                .append('path')
+                .attr('id', (d, i) => `label-${d.data.name}-${i}`)
+                .attr('d', outerArc)
+                .attr('class', 'path');
 
             svg.select('.slices').selectAll('.label')
-                    .data(pie(dataset))
-                    .enter()
-                        .append('text')
-                            .attr('class', 'label')
-                            .attr('transform', (d) => "translate(" + outerArc.centroid(d) + ")")
-                            .attr('text-anchor', 'middle')
-                            .text((d) => d.data.name);
+                .data(pie(dataset))
+                .enter()
+                .append('text')
+                .attr('class', 'label')
+                .attr('transform', (d) => 'translate(' + outerArc.centroid(d) + ')')
+                .attr('text-anchor', 'middle')
+                .text((d) => d.data.name);
 
             svg.select('.name')
-                        .append('text')
-                            .attr('class', 'name')
-                            .attr('text-anchor', 'middle')
-                            .text(this.name);
+                .append('text')
+                .attr('class', 'name')
+                .attr('text-anchor', 'middle')
+                .text(this.name);
         }
     },
     mounted() {
@@ -119,11 +121,11 @@ export default {
 </script>
 
 <style>
-    svg {
-        font-size: 1.1rem;
-    }
+svg {
+    font-size: 1.1rem;
+}
 
-    .slice {
-        transition: all 1s;
-    }
+.slice {
+    transition: all 1s;
+}
 </style>

@@ -69,7 +69,7 @@ export default {
                         php: 'PHP',
                         laravel: 'Laravel',
                         mysql: 'MySQL',
-                        javascript: 'JavaScript',
+                        javascript: 'JavaScript'
                     },
                     info: `
                     <ul>

@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
-    <header-section></header-section>
-    <skills-section></skills-section>
-    <experience-section></experience-section>
-    <projects-section></projects-section>
-  </div>
+    <div id="app">
+        <header-section></header-section>
+        <skills-section></skills-section>
+        <experience-section></experience-section>
+        <projects-section></projects-section>
+    </div>
 </template>
 
 <script>
@@ -14,13 +14,13 @@ import ExperienceSection from './components/sections/Experience.vue';
 import ProjectsSection from './components/sections/Projects.vue';
 
 export default {
-  name: 'app',
-  components: {
-    HeaderSection,
-    SkillsSection,
-    ExperienceSection,
-    ProjectsSection
-  }
+    name: 'app',
+    components: {
+        HeaderSection,
+        SkillsSection,
+        ExperienceSection,
+        ProjectsSection
+    }
 }
 </script>
 
@@ -30,12 +30,12 @@ body {
 }
 
 #app {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3f4f5f;
-  margin: 60px 4rem 5rem 4rem;
-  font-size: 18px;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #3f4f5f;
+    margin: 60px 4rem 5rem 4rem;
+    font-size: 18px;
 }
 
 h2 {
