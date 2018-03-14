@@ -30,7 +30,6 @@ export default {
         },
         createChart() {
             let dataset = this.createD3DataSet();
-            let format = d3.format('%');
 
             let pie = d3.pie()
                 .value(d => d.years)
@@ -66,21 +65,21 @@ export default {
             svg.append('g').attr('class', 'lines').attr('transform', 'translate('+canvasWidth/2+','+canvasHeight/2+')');
             svg.append('g').attr('class', 'name').attr('transform', 'translate('+canvasWidth/2+','+canvasHeight/2+')');
 
-            let path = svg.select('.slices').selectAll('.slice')
+            svg.select('.slices').selectAll('.slice')
                     .data(pie(dataset))
                     .enter()
                     .append('path')
                         .attr('id', (d,i) => `slice-${d.data.name}-${i}`)
                         .attr('class', 'slice')
                         .attr('d', arc)
-                        .attr('fill', (d,i) => color(d.data.name.length * (d.data.index + 1) * d.data.years * 0.005))
-                        .on('mouseenter', function(d) {
+                        .attr('fill', (d) => color(d.data.name.length * (d.data.index + 1) * d.data.years * 0.005))
+                        .on('mouseenter', function() {
                             d3.select(this)
                                 .transition()
                                 .duration(800)
                                 .attr('d', zoomArc);
                         })
-                        .on('mouseleave', function(d) {
+                        .on('mouseleave', function() {
                             d3.select(this)
                                 .transition()
                                 .duration(800)
@@ -89,7 +88,7 @@ export default {
                         .append('svg:title')
                         .text((d) => `${d.data.years} ` + (d.data.years > 1 ? 'years' : 'year'));
 
-            let outerPath = svg.select('.labels').selectAll('.path')
+            svg.select('.labels').selectAll('.path')
                         .data(pie(dataset))
                         .enter()
                         .append('path')
@@ -97,7 +96,7 @@ export default {
                         .attr('d', outerArc)
                         .attr('class', 'path');
 
-            let labels = svg.select('.slices').selectAll('.label')
+            svg.select('.slices').selectAll('.label')
                     .data(pie(dataset))
                     .enter()
                         .append('text')
@@ -106,7 +105,7 @@ export default {
                             .attr('text-anchor', 'middle')
                             .text((d) => d.data.name);
 
-            let skillLabel = svg.select('.name')
+            svg.select('.name')
                         .append('text')
                             .attr('class', 'name')
                             .attr('text-anchor', 'middle')

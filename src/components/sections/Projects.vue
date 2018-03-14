@@ -5,14 +5,14 @@
             <p>Due to the nature of my primary work (both technically and legally), I don't have the luxury of portfolio projects from my paid work. The below samples are projects that I work on in my free time, and therefore may be incomplete. They should, however, provide an idea of my coding skill and style.</p>
         </header>
         <section class="cardholder">
-            <article v-for="project in projects" class="card">
+            <article v-for="(project, i) in projects" class="card" :key="i">
                 <header>
                     <h3>{{ project.name }}</h3>
-                    <a :href="project.source"><i class="icon devicon-github-plain"></i> <span>Source Code</span></a>
+                    <a :href="project.source" target="_blank"><i class="icon devicon-github-plain"></i> <span>Source Code</span></a>
                 </header>
                 <section>
                     <ul class="tech">
-                        <li v-for="(t, i) in project.tech"><i :class="getClass(i)"></i> {{ t }}</li>
+                        <li v-for="(t, i) in project.tech" :key="i"><i :class="getClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
                 <section v-html="project.info">

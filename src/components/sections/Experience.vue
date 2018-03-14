@@ -2,10 +2,10 @@
     <section id="experience">
         <header>
             <h2>Experience</h2>
-            <p>This provides the most recent history. For a full employment history, <a href="https://www.linkedin.com/in/gordondev/">see my LinkedIn profile</a>.</p>
+            <p>This provides the most recent history. For a full employment history, <a href="https://www.linkedin.com/in/gordondev/" target="_blank">see my LinkedIn profile</a>.</p>
         </header>
         <section class="cardholder">
-            <article v-for="job in jobs" class="card">
+            <article v-for="(job, i) in jobs" class="card" :key="i">
                 <header>
                     <h3>{{ job.title }}</h3>
                     <h4>{{ job.company }}</h4>
@@ -13,7 +13,7 @@
                 </header>
                 <section>
                     <ul class="tech">
-                        <li v-for="(t, i) in job.tech"><i :class="getClass(i)"></i> {{ t }}</li>
+                        <li v-for="(t, i) in job.tech" :key="i"><i :class="getClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
                 <section class="info" v-html="job.info">
@@ -33,8 +33,8 @@ export default {
             jobs: [
                 {
                     title: 'Senior Back-End Engineer',
-                    company: 'BVAccel',
-                    dates: 'October 2017 - February 2018',
+                    company: 'BVAccel (formerly Rocket Code)',
+                    dates: 'October 2016 - February 2018',
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -59,36 +59,6 @@ export default {
                         <li>Provided culture guidance/feedback to CEO during acquisition of Rocket Code</li>
                     </ul>
                     <p><strong>Note:</strong> BVAccel bought Rocket Code in October 2017, making my job title and employer change, but not my job.</p>
-                    `
-                },
-                {
-                    title: 'Back-End Engineer',
-                    company: 'Rocket Code',
-                    dates: 'October 2016 - October 2017',
-                    tech: {
-                        php: 'PHP',
-                        laravel: 'Laravel',
-                        mysql: 'MySQL',
-                        redis: 'Redis',
-                        javascript: 'ES6',
-                        nodejs: 'Node/Yarn',
-                        vuejs: 'VueJS',
-                        bitbucket: 'Bitbucket',
-                        docker: 'Docker',
-                        ubuntu: 'Linux',
-                        nginx: 'Nginx',
-                        ansible: 'Ansible'
-                    },
-                    info: `
-                    <ul>
-                        <li>Worked closely with Front-End Engineers to expand Shopify’s capabilities</li>
-                        <li>Built custom API-based integrations between platforms</li>
-                        <li>Wrote Ruby-based Shopify checkout and line item scripts to modify cart behavior</li>
-                        <li>Used queue systems to handle imports of large datasets into Shopify and other APIs</li>
-                        <li>Planned and documented API endpoints using Swagger/OpenAPI</li>
-                        <li>Piloted new techniques, technologies, and learning resources for the team</li>
-                        <li>Provided culture guidance/feedback to CEO during acquisition of Rocket Code by BVAccel</li>
-                    </ul>
                     `
                 },
                 {

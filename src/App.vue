@@ -24,9 +24,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 body {
-    background-color: #d8d6cd;
+    background-color: #f0f0ec;
 }
 
 #app {
@@ -51,16 +51,16 @@ h3 {
 header {
     text-align: center;
     font-family: 'Forum', Helvetica, Arial, sans-serif;
-}
 
-header p {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    margin-top: -1.5rem;
-    max-width: 40rem;
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    opacity: .75;
-    font-weight: 100;
+    p {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: -1.5rem;
+        max-width: 40rem;
+        font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+        opacity: .75;
+        font-weight: 100;
+    }
 }
 
 a {
@@ -68,10 +68,10 @@ a {
     color: #754668;
     font-weight: bold;
     transition: all 1s;
-}
 
-a:hover {
-    color: #617a71;
+    :hover {
+        color: #617a71;
+    }
 }
 
 .icon {
@@ -87,14 +87,14 @@ a:hover {
 }
 
 .card {
-    background: #efecda;
+    background: #fcfbf8;
     box-shadow: 3px 3px 5px 0 rgba(0,0,0,.08);
     padding: 1rem 1.5rem;
     border-radius: 3px;
-}
 
-.card header {
-    text-align: left;
+    header {
+        text-align: left;
+    }
 }
 
 .tech {
@@ -102,9 +102,10 @@ a:hover {
     color: #7f968f;
     list-style-type: none;
     padding-left: 0;
+
+    li {
+        margin-bottom: 5px;
+    }
 }
 
-.tech li {
-    margin-bottom: 5px;
-}
 </style>
