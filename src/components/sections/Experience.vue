@@ -13,7 +13,7 @@
                 </header>
                 <section>
                     <ul class="tech">
-                        <li v-for="(t, i) in job.tech" :key="i"><i :class="getClass(i)"></i> {{ t }}</li>
+                        <li v-for="(t, i) in job.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
                 <section class="info" v-html="job.info">
@@ -27,7 +27,10 @@
 </template>
 
 <script>
+import icons from '../../mixins/icons';
+
 export default {
+    mixins: [icons],
     data() {
         return {
             jobs: [
@@ -58,7 +61,6 @@ export default {
                         <li>Piloted new techniques, technologies, and learning resources for the team</li>
                         <li>Provided culture guidance/feedback to CEO during acquisition of Rocket Code</li>
                     </ul>
-                    <p><strong>Note:</strong> BVAccel bought Rocket Code in October 2017, making my job title and employer change, but not my job.</p>
                     `
                 },
                 {
@@ -106,20 +108,31 @@ export default {
         }
     },
     methods: {
-        getClass(i) {
-            return `icon devicon-${i}-plain`;
-        }
     }
 }
 </script>
 
-<style scoped>
-.card h3 {
-    margin-bottom: .5rem;
-}
+<style lang="less">
+#experience {
+    .card {
+        h3 {
+            margin-bottom: .5rem;
+        }
 
-.card h4 {
-    margin: 0;
-    opacity: .6;
+        h4 {
+            margin: 0;
+            opacity: .6;
+        }
+    }
+
+    .info li {
+        list-style-type: circle;
+        padding: 3px 2px;
+        transition: all 1.5s;
+
+        &:hover {
+            background: rgba(97,122,113,.06);
+        }
+    }
 }
 </style>

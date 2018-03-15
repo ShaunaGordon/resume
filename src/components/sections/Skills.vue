@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Donut from '../graphics/Donut.vue';
+import Donut from '../support/Donut.vue';
 
 export default {
     components: {
@@ -24,7 +24,8 @@ export default {
                     ruby: 1,
                     sql: 10,
                     html: 10,
-                    css: 10
+                    css: 10,
+                    js: 8
                 },
                 paradigms: {
                     oop: 10,

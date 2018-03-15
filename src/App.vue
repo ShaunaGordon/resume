@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <header-section></header-section>
+        <intro-section></intro-section>
         <skills-section></skills-section>
         <experience-section></experience-section>
         <projects-section></projects-section>
@@ -9,6 +10,7 @@
 
 <script>
 import HeaderSection from './components/sections/Header.vue';
+import IntroSection from './components/sections/Intro.vue';
 import SkillsSection from './components/sections/Skills.vue';
 import ExperienceSection from './components/sections/Experience.vue';
 import ProjectsSection from './components/sections/Projects.vue';
@@ -17,6 +19,7 @@ export default {
     name: 'app',
     components: {
         HeaderSection,
+        IntroSection,
         SkillsSection,
         ExperienceSection,
         ProjectsSection
@@ -34,7 +37,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #3f4f5f;
-    margin: 60px 4rem 5rem 4rem;
+    margin: 3rem 4rem 5rem 4rem;
     font-size: 18px;
 }
 
@@ -56,7 +59,8 @@ header {
         margin: 0 auto;
         margin-bottom: 3rem;
         margin-top: -1.5rem;
-        max-width: 40rem;
+        max-width: 45rem;
+        text-align: justify;
         font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
         opacity: .75;
         font-weight: 100;
@@ -69,7 +73,7 @@ a {
     font-weight: bold;
     transition: all 1s;
 
-    :hover {
+    &:hover {
         color: #617a71;
     }
 }
@@ -81,7 +85,7 @@ a {
 
 .cardholder {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 40rem));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 35rem));
     grid-gap: 1rem;
     justify-content: center;
 }

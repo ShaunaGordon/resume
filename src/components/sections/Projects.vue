@@ -12,7 +12,7 @@
                 </header>
                 <section>
                     <ul class="tech">
-                        <li v-for="(t, i) in project.tech" :key="i"><i :class="getClass(i)"></i> {{ t }}</li>
+                        <li v-for="(t, i) in project.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
                 <section v-html="project.info">
@@ -23,7 +23,10 @@
 </template>
 
 <script>
+import icons from '../../mixins/icons';
+
 export default {
+    mixins: [icons],
     data() {
         return {
             projects: [
@@ -59,9 +62,7 @@ export default {
         }
     },
     methods: {
-        getClass(i) {
-            return `icon devicon-${i}-plain`;
-        }
+
     }
 }
 </script>
