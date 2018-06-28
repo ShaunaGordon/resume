@@ -40,14 +40,25 @@
     ],
     "rules": {
       "no-debugger": 2,
-      "no-trailing-spaces": [2, { "skipBlankLines": true }],
+      "no-trailing-spaces": [
+        2,
+        {
+          "skipBlankLines": true
+        }
+      ],
       "semi": 0,
-      "indent": ["error", 4],
-      "space-before-function-paren": [2, {
-        "anonymous": "never",
-        "named": "never",
-        "asyncArrow": "always"
-      }]
+      "indent": [
+        "error",
+        4
+      ],
+      "space-before-function-paren": [
+        2,
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ]
     }
   },
   "postcss": {
