@@ -5,6 +5,7 @@
         <skills-section></skills-section>
         <experience-section></experience-section>
         <projects-section></projects-section>
+        <hire-me-section></hire-me-section>
     </div>
 </template>
 
@@ -14,6 +15,7 @@ import IntroSection from './components/sections/Intro.vue';
 import SkillsSection from './components/sections/Skills.vue';
 import ExperienceSection from './components/sections/Experience.vue';
 import ProjectsSection from './components/sections/Projects.vue';
+import HireMeSection from './components/sections/HireMe.vue';
 
 export default {
     name: 'app',
@@ -22,7 +24,8 @@ export default {
         IntroSection,
         SkillsSection,
         ExperienceSection,
-        ProjectsSection
+        ProjectsSection,
+        HireMeSection
     }
 }
 </script>
@@ -30,6 +33,7 @@ export default {
 <style lang="less">
 body {
     background-color: #f0f0ec;
+    margin-bottom: 1rem;
 }
 
 #app {
@@ -43,6 +47,7 @@ body {
 
 h2 {
     font-size: 4rem;
+    margin-top: 2rem;
 }
 
 h3 {

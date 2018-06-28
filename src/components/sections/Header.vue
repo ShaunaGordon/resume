@@ -2,7 +2,8 @@
   <section id="top">
       <header>
           <img class="avatar" src="img/bitmoji.png" />
-          <h1>Shauna Gordon</h1>
+          <h1>I'm Shauna Gordon</h1>
+          <h2>And I Make Things</h2>
       </header>
       <nav>
           <ul>
@@ -27,12 +28,18 @@ export default {
                 {
                     link: 'http://shaunagordon.com/',
                     icon: 'pencil-alt',
-                    text: 'Writings'
+                    text: 'Blog'
                 },
                 {
                     link: 'https://github.com/ShaunaGordon',
                     icon: 'github-alt',
                     text: 'GitHub',
+                    brand: true
+                },
+                {
+                    link: 'https://gitlab.com/shauna',
+                    icon: 'gitlab',
+                    text: 'GitLab',
                     brand: true
                 },
                 {
@@ -60,6 +67,7 @@ export default {
     h1 {
         font-size: 6rem;
         margin-top: 1rem;
+        margin-bottom: .5rem;
     }
 
     .avatar {
@@ -67,7 +75,7 @@ export default {
     }
 
     nav {
-        padding-bottom: 2rem;
+        padding-bottom: 1.25rem;
 
         ul {
             display: grid;
@@ -76,7 +84,6 @@ export default {
 
             li {
                 list-style-type: none;
-                padding: 10px 0px 10px 0px;
                 text-align: center;
             }
         }
