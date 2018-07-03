@@ -3,6 +3,7 @@
         <header>
             <h2>Projects</h2>
             <p>Due to the nature of my primary work (both technically and legally), I don't have the luxury of portfolio projects from my paid work. The below samples are projects that I work on in my free time, and therefore may be incomplete. They should, however, provide an idea of my coding skill and style.</p>
+            <p>At any given point in time, I may have other projects that I can demonstrate on an individual basis, but that aren't yet publicly available. They are available upon request after we've had a discussion or two. I'm also willing to do small "take home" projects if desired.</p>
         </header>
         <section class="cardholder">
             <article v-for="(project, i) in projects" class="card" :key="i">
