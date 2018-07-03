@@ -57,7 +57,7 @@ export default {
                 'Take Care Of Yourself'
             ],
             environments: [
-                'No Agencies',
+                'No Agencies (unless you are very explicitly dev-friendly)',
                 'Remote-Friendly',
                 'Results-Only',
                 'Encourage Self-Direction And Project Ownership'
