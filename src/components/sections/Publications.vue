@@ -37,7 +37,8 @@ export default {
                         php: 'PHP',
                         docker: 'Docker',
                         linux: 'Linux',
-                        mysql: 'MariaDB'
+                        mysql: 'MariaDB',
+                        nginx: 'Nginx'
                     },
                     link: 'https://x-team.com/blog/docker-compose-php-environment-from-scratch/',
                     info: `<p>In this tutorial, I go through the process of setting up a Docker cluster-based environment for PHP development using Docker-Compose. The cluster includes nodes for Nginx, php-fpm, and MariaDB.</p>
