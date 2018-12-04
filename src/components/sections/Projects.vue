@@ -49,14 +49,21 @@ export default {
                     `
                 },
                 {
-                    name: "Soaper's Friend",
+                    name: "ROWE Jobs",
                     tech: {
-                        ruby: 'Ruby',
-                        rails: 'Rails',
-                        docker: 'Docker'
+                        php: 'PHP',
+                        laravel: 'Laravel',
+                        docker: 'Docker',
+                        webpack: 'Webpack',
+                        vuejs: 'VueJS',
+                        javascript: 'ES6',
+                        html5: 'HTML5',
+                        css3: 'CSS3',
+                        less: 'Less CSS'
                     },
-                    source: 'https://github.com/ShaunaGordon/soapers-friend',
-                    info: `<p>Soaper's Friend is intended to be a multi-platform application for soapmakers to track inventory, starting with a Rails web app.</p>
+                    source: 'https://gitlab.com/rowe-jobs/rowe-jobs',
+                    info: `<p>ROWE Jobs is a niche job board, specifically for companies who embrace the Results-Only Work Environment philosophy.</p>
+                    <p>This project is built in PHP7 and Laravel 5, with VueJS (with Webpack, Babel, and Yarn, like this resume page, plus Jest for component testing), and a specific focus on building it using <abbr title="Test-Driven Development">TDD</abbr> practices.</p>
                     `
                 }
             ]
