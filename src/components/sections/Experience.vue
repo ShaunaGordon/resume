@@ -35,9 +35,30 @@ export default {
         return {
             jobs: [
                 {
+                    title: 'Affiliate Software Engineer',
+                    company: 'Proof Group',
+                    dates: 'Current',
+                    tech: {
+                        python: 'Python',
+                        django: 'Django',
+                        github: 'GitHub'
+                    },
+                    info: `
+                        <ul>
+                            <li>Help write the Python/Django portion of company's web UI over FileMaker</li>
+                            <li>Provide advice on design changes/updates to improve user experience</li>
+                            <li>Help others learn unfamiliar technology pieces</li>
+                            <li>Help improve affiliate program</li>
+                        </ul>
+                        <p>
+                            Proof Group uses a novel twist on keeping human resources on a contract/retainer basis, which they call an affiliate program. The program consists of a pool of consultants with various skillsets who work on a project basis. This is different from conventional contracting in some subtle, but important ways. The affiliate pool consists of true consultants, in a business-to-business type of relationship (so the affiliates are free to pick up projects based on their terms and work when and where they choose, so long as the work they agreed to do gets done), but with the ability to collaborate with one another and with key contacts of the core company team. To be an affiliate is to have an ongoing business-to-business relationship as a vendor to the company.
+                        </p>
+                    `
+                },
+                {
                     title: 'Senior Back-End Engineer',
                     company: 'BVAccel (formerly Rocket Code)',
-                    dates: 'October 2016 - February 2018',
+                    dates: '2016 - 2018',
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -66,7 +87,7 @@ export default {
                 {
                     title: 'Developer, GoExpo Division',
                     company: 'Core-Apps',
-                    dates: 'April 2014 - December 2015',
+                    dates: '2014 - 2015',
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -84,7 +105,7 @@ export default {
                 {
                     title: 'Developer',
                     company: 'Fahlgren Mortine',
-                    dates: 'October 2012 - March 2014',
+                    dates: '2012 - 2014',
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
