@@ -22,6 +22,7 @@ export default {
                 general: {
                     php: 8,
                     ruby: 1,
+                    python: .5,
                     sql: 10,
                     html: 10,
                     css: 10,
@@ -48,7 +49,7 @@ export default {
                     codeigniter: 3
                 },
                 javascript: {
-                    vue: 1,
+                    vue: 2,
                     jquery: 5,
                     es6: 1
                 },
