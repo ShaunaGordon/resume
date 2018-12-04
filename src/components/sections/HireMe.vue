@@ -2,8 +2,11 @@
     <section id="hire-me">
         <header>
             <h2>Let's Work Together!</h2>
-            <p v-if="looking">
-                You're in luck! I'm <strong>actively looking</strong> for new opportunities. Please have a look at my values, below, and if you think your company and I would make a good pairing, drop me a line via email or LinkedIn.
+            <p v-if="looking == 'w2'">
+                You're in luck! I'm <strong>actively looking</strong> for new <strong>employment opportunities</strong>. Please have a look at my values, below, and if you think your company and I would make a good pairing, drop me a line via email or LinkedIn.
+            </p>
+            <p v-else-if="looking == 'freelance'">
+                You're in luck! I'm open to <strong>consulting opportunities</strong>. Please note that this is not pseudo-employee contracts, but a business-to-business type of arrangement. If you need someone on a retainer, ad-hoc, or project basis, we might be a good fit! I run my consulting similarly to what I look for in a conventional employment environment, so check out my core values, below, and if you think your company and mine would make a good business pairing, then drop me a line via email or LinkedIn.
             </p>
             <p v-else>
                 I'm <strong>not</strong> actively looking for new opportunities right now. Feel free to check back again, and if you think you've got a <em>really great</em> company that aligns with my skills and values (discussed below), feel free to drop me a line via email or LinkedIn.
@@ -44,7 +47,7 @@
 export default {
     data() {
         return {
-            looking: true,
+            looking: 'freelance',
             values: [
                 'Always Be Learning',
                 "Don't Fear Failure",
