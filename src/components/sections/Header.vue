@@ -1,7 +1,7 @@
 <template>
   <section id="top">
       <header>
-          <img class="avatar" src="img/bitmoji.png" />
+          <img class="avatar" src="img/avatar.png" />
           <h1>I'm Shauna Gordon</h1>
           <h2>And I Make Things</h2>
       </header>
