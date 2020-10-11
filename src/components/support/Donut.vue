@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         createD3DataSet() {
-            let names = Object.keys(this.items);
+            const names = Object.keys(this.items);
             return names.map((name, index) => {
                 return {
                     index: index,
@@ -29,35 +29,35 @@ export default {
             });
         },
         createChart() {
-            let dataset = this.createD3DataSet();
+            const dataset = this.createD3DataSet();
 
-            let pie = d3.pie()
+            const pie = d3.pie()
                 .value(d => d.years)
                 .sort(null)
                 .padAngle(0.01);
 
-            let w = 300;
-            let h = 300;
-            let canvasWidth = w * 1.1;
-            let canvasHeight = h * 1.1;
-            let donutWidth = 35;
-            let radius = Math.min(w / 1.5, h) / 2;
+            const w = 300;
+            const h = 300;
+            const canvasWidth = w * 1.1;
+            const canvasHeight = h * 1.1;
+            const donutWidth = 35;
+            const radius = Math.min(w / 1.5, h) / 2;
 
-            let color = d3.scaleSequential(d3.interpolateViridis);
+            const color = d3.scaleSequential(d3.interpolateViridis);
 
-            let arc = d3.arc()
+            const arc = d3.arc()
                 .innerRadius(radius - donutWidth)
                 .outerRadius(radius);
 
-            let outerArc = d3.arc()
+            const outerArc = d3.arc()
                 .innerRadius(radius * 1.26)
                 .outerRadius(radius * 1.26);
 
-            let zoomArc = d3.arc()
+            const zoomArc = d3.arc()
                 .innerRadius((radius - donutWidth) * 1.1)
                 .outerRadius(radius * 1.2);
 
-            let svg = d3.select(`#${this.id}`)
+            const svg = d3.select(`#${this.id}`)
                 .append('svg')
                 .attr('width', canvasWidth)
                 .attr('height', canvasHeight);

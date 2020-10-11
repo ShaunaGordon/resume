@@ -20,43 +20,44 @@ export default {
         return {
             skills: {
                 general: {
-                    php: 8,
+                    php: 10,
                     ruby: 1,
-                    python: .5,
+                    python: 2,
                     sql: 10,
-                    html: 10,
-                    css: 10,
-                    js: 8
+                    html: 12,
+                    css: 12,
+                    js: 10
                 },
                 paradigms: {
-                    oop: 10,
+                    oop: 12,
                     functional: 1,
-                    mvc: 10
+                    mvc: 12
                 },
                 devops: {
-                    linux: 8,
-                    macos: 4,
-                    mysql: 8,
-                    ansible: 3,
-                    docker: 1,
+                    linux: 10,
+                    macos: 6,
+                    ansible: 4,
+                    docker: 3,
                     forge: 1,
                     vagrant: 4
                 },
                 php: {
-                    php7: 2,
+                    php7: 4,
                     php5: 8,
-                    laravel: 4,
-                    codeigniter: 3
+                    laravel: 5
                 },
                 javascript: {
-                    vue: 2,
-                    jquery: 5,
-                    es6: 1
+                    vue: 3,
+                    react: 1,
+                    node: 1,
+                    es6: 3,
+                    jest: 3,
+                    webpack: 3
                 },
                 css: {
-                    vanilla: 10,
-                    sass: 4,
-                    less: 2
+                    vanilla: 12,
+                    sass: 6,
+                    less: 3
                 }
             }
         }

@@ -49,7 +49,7 @@ export default {
                     `
                 },
                 {
-                    name: "ROWE Jobs",
+                    name: 'ROWE Jobs',
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',

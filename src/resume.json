@@ -1,0 +1,38 @@
+{
+    "basics": {
+        "name": "Shauna Gordon",
+        "label": "Software Developer",
+        "picture": "http://resume.shaunagordon.com/img/avatar.png",
+        "email": "shauna@shaunagordon.com",
+        "website": "http://shaunagordon.com",
+        "location": {
+            "city": "Columbus",
+            "countryCode": "US",
+            "region": "Ohio"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "url": "https://www.linkedin.com/in/gordondev/",
+                "username": "gordondev"
+            },
+            {
+                "network": "GitHub",
+                "url": "https://github.com/ShaunaGordon",
+                "username": "ShaunaGordon"
+            },
+            {
+                "network": "GitLab",
+                "url": "https://gitlab.com/shauna",
+                "username": "shauna"
+            },
+        ],
+        "work": [
+        ],
+        "volunteer": [
+        ],
+        "education": [],
+        "publications": [],
+        "skills": [],
+    }
+}

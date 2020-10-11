@@ -31,7 +31,7 @@ export default {
         return {
             publications: [
                 {
-                    title: "A Docker-Compose PHP Environment From Scratch",
+                    title: 'A Docker-Compose PHP Environment From Scratch',
                     publication: 'X-Team Blog',
                     tech: {
                         php: 'PHP',
@@ -43,6 +43,12 @@ export default {
                     link: 'https://x-team.com/blog/docker-compose-php-environment-from-scratch/',
                     info: `<p>In this tutorial, I go through the process of setting up a Docker cluster-based environment for PHP development using Docker-Compose. The cluster includes nodes for Nginx, php-fpm, and MariaDB.</p>
                     `
+                },
+                {
+                    title: 'Effective Communication While Freelancing',
+                    publication: 'Gun.io Blog',
+                    link: 'https://www.gun.io/blog/effective-communication-while-freelancing',
+                    info: '<p>In this article, I discuss establishing and maintaining an effective line of communication with clients.</p>'
                 }
             ]
         }
