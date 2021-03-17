@@ -34,6 +34,44 @@ export default {
     data() {
         return {
             jobs: [
+                // {
+                //     title: 'Owner',
+                //     company: 'World Tree Limited',
+                //     dates: 'Current',
+                //     tech: {
+                //         python: 'Python',
+                //         php: 'PHP',
+                //         nodejs: 'Node',
+                //         vuejs: 'Vue'
+                //     },
+                //     info: `
+                //         <ul>
+                //             <li>Provide software development services to clients</li>
+                //             <li>Provide technical consultation and advice to businessowners</li>
+                //             <li>Develop in-house software for a variety of purposes and goals</li>
+                //         </ul>
+                //     `
+                // },
+                {
+                    title: 'Adjunct Professor',
+                    company: 'Hocking Technical College',
+                    dates: 'Current',
+                    tech: {
+                        python: 'Python',
+                        linux: 'Linux',
+                        readme: 'Blackboard LMS',
+                        github: 'Github Education'
+                    },
+                    info: `
+                        <ul>
+                            <li>Design and plan the curriculum for the school's Python Essentials course</li>
+                            <li>Teach and foster student learning in Python and other courses</li>
+                            <li>Provide from-the-industry input to the department committees</li>
+                            <li>Work closely with other instructors and department heads to help find solutions to school-level challenges</li>
+                        </ul>
+                        <p>Hocking College is a small public college primarily serving rural southeastern Ohio students. It provides a central hub of activity to help pull the students -- and the area at large -- out of poverty, stop brain-drain, and reinvest in the region.</p>
+                    `
+                },
                 {
                     title: 'Affiliate Software Engineer',
                     company: 'Proof Group',
@@ -41,12 +79,14 @@ export default {
                     tech: {
                         python: 'Python',
                         django: 'Django',
-                        github: 'GitHub'
+                        github: 'GitHub',
+                        nodejs: 'Node'
                     },
                     info: `
                         <ul>
                             <li>Help write the Python/Django portion of company's web UI over FileMaker</li>
                             <li>Provide advice on design changes/updates to improve user experience</li>
+                            <li>Architect and develop experimental projects</li>
                             <li>Help others learn unfamiliar technology pieces</li>
                             <li>Help improve affiliate program</li>
                         </ul>
@@ -102,29 +142,29 @@ export default {
                     </ul>
                     `
                 },
-                {
-                    title: 'Developer',
-                    company: 'Fahlgren Mortine',
-                    dates: '2012 - 2014',
-                    tech: {
-                        php: 'PHP',
-                        laravel: 'Laravel',
-                        mysql: 'MySQL',
-                        git: 'Git',
-                        sass: 'Sass',
-                        ubuntu: 'Linux',
-                        apache: 'Apache2',
-                        jquery: 'jQuery',
-                        bootstrap: 'Bootstrap',
-                        'dot-net': '.NET'
-                    },
-                    info: `
-                    <ul>
-                        <li>Full-stack development for clients using a variety of technologies</li>
-                        <li>Provided scope, time estimation, planning advice, and ongoing support for client projects</li>
-                    </ul>
-                    `
-                }
+                // {
+                //     title: 'Developer',
+                //     company: 'Fahlgren Mortine',
+                //     dates: '2012 - 2014',
+                //     tech: {
+                //         php: 'PHP',
+                //         laravel: 'Laravel',
+                //         mysql: 'MySQL',
+                //         git: 'Git',
+                //         sass: 'Sass',
+                //         ubuntu: 'Linux',
+                //         apache: 'Apache2',
+                //         jquery: 'jQuery',
+                //         bootstrap: 'Bootstrap',
+                //         'dot-net': '.NET'
+                //     },
+                //     info: `
+                //     <ul>
+                //         <li>Full-stack development for clients using a variety of technologies</li>
+                //         <li>Provided scope, time estimation, planning advice, and ongoing support for client projects</li>
+                //     </ul>
+                //     `
+                // }
             ]
         }
     },

@@ -1,8 +1,9 @@
 <template>
     <section id="publications">
         <header>
-            <h2>Publications</h2>
+            <h2>Talks &amp; Publications</h2>
             <p>I like to write about the things I do and share what I know and learn with others. Aside from my own blog, I occassionally have articles in other publications.</p>
+            <p>Very occassionally, I also do a little public speaking. The slide decks are linked here, unless a video is available.</p>
         </header>
         <section class="cardholder">
             <article v-for="(pub, i) in publications" class="card" :key="i">
@@ -49,6 +50,12 @@ export default {
                     publication: 'Gun.io Blog',
                     link: 'https://www.gun.io/blog/effective-communication-while-freelancing',
                     info: '<p>In this article, I discuss establishing and maintaining an effective line of communication with clients.</p>'
+                },
+                {
+                    title: 'From Git To Github - An Introduction to Version-Controlled and Collaborative Development',
+                    publication: 'Women In Analytics, Feb 2021',
+                    link: 'https://talks.shaunagordon.com/git-to-github',
+                    info: '<p>This talk and live tutorial provided attendees a crash course in enough Git and Github to get them up and running in open source contribution.</p>'
                 }
             ]
         }

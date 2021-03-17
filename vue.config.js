@@ -9,6 +9,6 @@ module.exports = {
 
         // Enable CSS modules for all css / pre-processor files.
         // This option does not affect *.vue files.
-        modules: false
+        requireModuleExtension: false
     }
 }

@@ -26,7 +26,7 @@ export default {
         return {
             nav: [
                 {
-                    link: 'http://shaunagordon.com/',
+                    link: 'https://shaunagordon.com/',
                     icon: 'pencil-alt',
                     text: 'Blog'
                 },
@@ -52,6 +52,11 @@ export default {
                     icon: 'linkedin',
                     text: 'LinkedIn',
                     brand: true
+                },
+                {
+                    link: 'https://talks.shaunagordon.com',
+                    icon: 'chalkboard-teacher',
+                    text: 'Slide Decks'
                 }
             ]
         }
@@ -79,7 +84,7 @@ export default {
 
         ul {
             display: grid;
-            grid-template-columns: repeat(auto-fit, 15rem);
+            grid-template-columns: repeat(auto-fit, 10rem);
             justify-content: space-between;
 
             li {
