@@ -9,14 +9,14 @@
                 <header>
                     <h3>{{ job.title }}</h3>
                     <h4>{{ job.company }}</h4>
-                    <h4>{{ job.dates }}</h4>
+                    <h4>{{ job.dates.start }} - {{ job.dates.end }}</h4>
                 </header>
                 <section>
                     <ul class="tech">
                         <li v-for="(t, i) in job.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
-                <section class="info" v-html="job.info">
+                <section class="info" v-if="job.dates.end == 'Current' || job.dates.end >= ((new Date()).getFullYear() - 5)" v-html="job.info">
                 </section>
             </article>
         </section>
@@ -34,28 +34,38 @@ export default {
     data() {
         return {
             jobs: [
-                // {
-                //     title: 'Owner',
-                //     company: 'World Tree Limited',
-                //     dates: 'Current',
-                //     tech: {
-                //         python: 'Python',
-                //         php: 'PHP',
-                //         nodejs: 'Node',
-                //         vuejs: 'Vue'
-                //     },
-                //     info: `
-                //         <ul>
-                //             <li>Provide software development services to clients</li>
-                //             <li>Provide technical consultation and advice to businessowners</li>
-                //             <li>Develop in-house software for a variety of purposes and goals</li>
-                //         </ul>
-                //     `
-                // },
+                {
+                    title: 'Senior Software Engineer',
+                    company: 'Custom Ink',
+                    dates: {
+                        start: 2020,
+                        end: 'Current'
+                    },
+                    tech: {
+                        ruby: 'Ruby',
+                        rails: 'Rails',
+                        nodejs: 'Node',
+                        react: 'React',
+                        github: 'GitHub',
+                        docker: 'Docker'
+                    },
+                    info: `
+                        <ul>
+                            <li>Research and develop solutions to various business problems</li>
+                            <li>Maintain and upgrade legacy code, bringing it in line with modern standards</li>
+                            <li>Provide input on new technology or processes</li>
+                            <li>Prototype and pilot internal tooling</li>
+                            <li>Provide production support for applications owned by team</li>
+                        </ul>
+                    `
+                },
                 {
                     title: 'Adjunct Professor',
                     company: 'Hocking Technical College',
-                    dates: 'Current',
+                    dates: {
+                        start: 2019,
+                        end: 2021
+                    },
                     tech: {
                         python: 'Python',
                         linux: 'Linux',
@@ -75,7 +85,10 @@ export default {
                 {
                     title: 'Affiliate Software Engineer',
                     company: 'Proof Group',
-                    dates: 'Current',
+                    dates: {
+                        start: 2018,
+                        end: 2021
+                    },
                     tech: {
                         python: 'Python',
                         django: 'Django',
@@ -98,7 +111,10 @@ export default {
                 {
                     title: 'Senior Back-End Engineer',
                     company: 'BVAccel (formerly Rocket Code)',
-                    dates: '2016 - 2018',
+                    dates: {
+                        start: 2016,
+                        end: 2018
+                    },
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -127,7 +143,10 @@ export default {
                 {
                     title: 'Developer, GoExpo Division',
                     company: 'Core-Apps',
-                    dates: '2014 - 2015',
+                    dates: {
+                        start: 2014,
+                        end: 2015
+                    },
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -142,29 +161,32 @@ export default {
                     </ul>
                     `
                 },
-                // {
-                //     title: 'Developer',
-                //     company: 'Fahlgren Mortine',
-                //     dates: '2012 - 2014',
-                //     tech: {
-                //         php: 'PHP',
-                //         laravel: 'Laravel',
-                //         mysql: 'MySQL',
-                //         git: 'Git',
-                //         sass: 'Sass',
-                //         ubuntu: 'Linux',
-                //         apache: 'Apache2',
-                //         jquery: 'jQuery',
-                //         bootstrap: 'Bootstrap',
-                //         'dot-net': '.NET'
-                //     },
-                //     info: `
-                //     <ul>
-                //         <li>Full-stack development for clients using a variety of technologies</li>
-                //         <li>Provided scope, time estimation, planning advice, and ongoing support for client projects</li>
-                //     </ul>
-                //     `
-                // }
+                {
+                    title: 'Developer',
+                    company: 'Fahlgren Mortine',
+                    dates: {
+                        start: 2012,
+                        end: 2014
+                    },
+                    tech: {
+                        php: 'PHP',
+                        laravel: 'Laravel',
+                        mysql: 'MySQL',
+                        git: 'Git',
+                        sass: 'Sass',
+                        ubuntu: 'Linux',
+                        apache: 'Apache2',
+                        jquery: 'jQuery',
+                        bootstrap: 'Bootstrap',
+                        'dot-net': '.NET'
+                    },
+                    info: `
+                    <ul>
+                        <li>Full-stack development for clients using a variety of technologies</li>
+                        <li>Provided scope, time estimation, planning advice, and ongoing support for client projects</li>
+                    </ul>
+                    `
+                }
             ]
         }
     },

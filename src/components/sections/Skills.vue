@@ -23,10 +23,10 @@ export default {
                     php: 10,
                     ruby: 1,
                     python: 2,
-                    sql: 10,
-                    html: 12,
-                    css: 12,
-                    js: 10
+                    sql: 12,
+                    html: 15,
+                    css: 15,
+                    js: 12
                 },
                 paradigms: {
                     oop: 12,
@@ -34,11 +34,10 @@ export default {
                     mvc: 12
                 },
                 devops: {
-                    linux: 10,
-                    macos: 6,
+                    linux: 14,
+                    macos: 8,
                     ansible: 4,
-                    docker: 3,
-                    forge: 1,
+                    docker: 5,
                     vagrant: 4
                 },
                 php: {
@@ -48,16 +47,16 @@ export default {
                 },
                 javascript: {
                     vue: 3,
-                    react: 1,
-                    node: 1,
-                    es6: 3,
-                    jest: 3,
-                    webpack: 3
+                    react: 2,
+                    node: 3,
+                    es6: 5,
+                    jest: 5,
+                    webpack: 5
                 },
                 css: {
-                    vanilla: 12,
-                    sass: 6,
-                    less: 3
+                    vanilla: 15,
+                    sass: 7,
+                    less: 4
                 }
             }
         }

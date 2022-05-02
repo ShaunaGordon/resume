@@ -9,7 +9,7 @@
                 You're in luck! I'm open to <strong>consulting opportunities</strong>. Please note that this is not pseudo-employee contracts, but a business-to-business type of arrangement. If you need someone on a retainer, ad-hoc, or project basis, we might be a good fit! I run my consulting similarly to what I look for in a conventional employment environment, so check out my core values, below, and if you think your company and mine would make a good business pairing, then drop me a line via email or LinkedIn.
             </p>
             <p v-else>
-                I'm <strong>not</strong> actively looking for new opportunities right now. Feel free to check back again, and if you think you've got a <em>really great</em> company that aligns with my skills and values (discussed below), feel free to drop me a line via email or LinkedIn.
+                I'm <strong>not</strong> currently looking for new opportunities right now. Feel free to check back again, and if you think you've got a <em>really great</em> company that aligns with my skills and values (discussed below), feel free to drop me a line via email or LinkedIn. Please keep in mind, though, that unless the opportunity <em>very closely</em> aligns with my values and experience, I very likely will not respond or will only respond to turn it down.
             </p>
         </header>
         <section class="cardholder">
@@ -47,7 +47,7 @@
 export default {
     data() {
         return {
-            looking: 'freelance',
+            looking: false,
             values: [
                 'Always Be Learning',
                 "Don't Fear Failure",

@@ -25,7 +25,7 @@
                 "network": "GitLab",
                 "url": "https://gitlab.com/shauna",
                 "username": "shauna"
-            },
+            }
         ],
         "work": [
         ],
@@ -33,6 +33,6 @@
         ],
         "education": [],
         "publications": [],
-        "skills": [],
+        "skills": []
     }
 }
