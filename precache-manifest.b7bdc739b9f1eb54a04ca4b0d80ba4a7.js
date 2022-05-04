@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7dc8769c9bbadaac938",
-    "url": "/css/app.8565247f.css"
+    "revision": "18f2daf678413565996f",
+    "url": "/css/app.5e4745f2.css"
   },
   {
     "revision": "e000fbde6299c73bfd2b9d8f481f5497",
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/bitmoji.png"
   },
   {
-    "revision": "3cc2264e2e5114200a127d2778ef87a5",
+    "revision": "780cbb90c5ad042eccee95c2c74116ee",
     "url": "/index.html"
   },
   {
-    "revision": "b7dc8769c9bbadaac938",
-    "url": "/js/app.269590ce.js"
+    "revision": "18f2daf678413565996f",
+    "url": "/js/app.5be06790.js"
   },
   {
-    "revision": "6c1a1dfb696a9738fa49",
-    "url": "/js/chunk-vendors.05cd95f5.js"
+    "revision": "0002e6f86c71fb4cac94",
+    "url": "/js/chunk-vendors.0360377a.js"
   },
   {
     "revision": "61369a716f298ee5be0a4260ec324cb0",
