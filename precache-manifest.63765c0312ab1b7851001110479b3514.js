@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18f2daf678413565996f",
-    "url": "/css/app.5e4745f2.css"
+    "revision": "f15c2874d5f82a15d390",
+    "url": "/css/app.df2c83e0.css"
   },
   {
     "revision": "e000fbde6299c73bfd2b9d8f481f5497",
@@ -12,12 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/bitmoji.png"
   },
   {
-    "revision": "780cbb90c5ad042eccee95c2c74116ee",
+    "revision": "a11a71662d280a2393cb7e56d74e0c35",
     "url": "/index.html"
   },
   {
-    "revision": "18f2daf678413565996f",
-    "url": "/js/app.5be06790.js"
+    "revision": "f15c2874d5f82a15d390",
+    "url": "/js/app.a7c5b58e.js"
   },
   {
     "revision": "0002e6f86c71fb4cac94",
