@@ -9,14 +9,14 @@
                 <header>
                     <h3>{{ job.title }}</h3>
                     <h4>{{ job.company }}</h4>
-                    <h4>{{ job.dates }}</h4>
+                    <h4>{{ job.dates.start }} - {{ job.dates.end }}</h4>
                 </header>
                 <section>
                     <ul class="tech">
                         <li v-for="(t, i) in job.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
-                <section class="info" v-html="job.info">
+                <section class="info" v-if="job.dates.end == 'Current' || job.dates.end >= ((new Date()).getFullYear() - 5)" v-html="job.info">
                 </section>
             </article>
         </section>
@@ -35,18 +35,71 @@ export default {
         return {
             jobs: [
                 {
+                    title: 'Senior Software Engineer',
+                    company: 'Custom Ink',
+                    dates: {
+                        start: 2020,
+                        end: 'Current'
+                    },
+                    tech: {
+                        ruby: 'Ruby',
+                        rails: 'Rails',
+                        nodejs: 'Node',
+                        react: 'React',
+                        github: 'GitHub',
+                        docker: 'Docker'
+                    },
+                    info: `
+                        <ul>
+                            <li>Research and develop solutions to various business problems</li>
+                            <li>Maintain and upgrade legacy code, bringing it in line with modern standards</li>
+                            <li>Provide input on new technology or processes</li>
+                            <li>Prototype and pilot internal tooling</li>
+                            <li>Provide production support for applications owned by team</li>
+                        </ul>
+                    `
+                },
+                {
+                    title: 'Adjunct Professor',
+                    company: 'Hocking Technical College',
+                    dates: {
+                        start: 2019,
+                        end: 2021
+                    },
+                    tech: {
+                        python: 'Python',
+                        linux: 'Linux',
+                        readme: 'Blackboard LMS',
+                        github: 'Github Education'
+                    },
+                    info: `
+                        <ul>
+                            <li>Design and plan the curriculum for the school's Python Essentials course</li>
+                            <li>Teach and foster student learning in Python and other courses</li>
+                            <li>Provide from-the-industry input to the department committees</li>
+                            <li>Work closely with other instructors and department heads to help find solutions to school-level challenges</li>
+                        </ul>
+                        <p>Hocking College is a small public college primarily serving rural southeastern Ohio students. It provides a central hub of activity to help pull the students -- and the area at large -- out of poverty, stop brain-drain, and reinvest in the region.</p>
+                    `
+                },
+                {
                     title: 'Affiliate Software Engineer',
                     company: 'Proof Group',
-                    dates: 'Current',
+                    dates: {
+                        start: 2018,
+                        end: 2021
+                    },
                     tech: {
                         python: 'Python',
                         django: 'Django',
-                        github: 'GitHub'
+                        github: 'GitHub',
+                        nodejs: 'Node'
                     },
                     info: `
                         <ul>
                             <li>Help write the Python/Django portion of company's web UI over FileMaker</li>
                             <li>Provide advice on design changes/updates to improve user experience</li>
+                            <li>Architect and develop experimental projects</li>
                             <li>Help others learn unfamiliar technology pieces</li>
                             <li>Help improve affiliate program</li>
                         </ul>
@@ -58,7 +111,10 @@ export default {
                 {
                     title: 'Senior Back-End Engineer',
                     company: 'BVAccel (formerly Rocket Code)',
-                    dates: '2016 - 2018',
+                    dates: {
+                        start: 2016,
+                        end: 2018
+                    },
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -87,7 +143,10 @@ export default {
                 {
                     title: 'Developer, GoExpo Division',
                     company: 'Core-Apps',
-                    dates: '2014 - 2015',
+                    dates: {
+                        start: 2014,
+                        end: 2015
+                    },
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
@@ -105,7 +164,10 @@ export default {
                 {
                     title: 'Developer',
                     company: 'Fahlgren Mortine',
-                    dates: '2012 - 2014',
+                    dates: {
+                        start: 2012,
+                        end: 2014
+                    },
                     tech: {
                         php: 'PHP',
                         laravel: 'Laravel',
