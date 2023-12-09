@@ -39,7 +39,7 @@ export default {
                     company: 'Custom Ink',
                     dates: {
                         start: 2020,
-                        end: 'Current'
+                        end: 2023
                     },
                     tech: {
                         ruby: 'Ruby',
