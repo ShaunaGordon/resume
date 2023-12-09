@@ -56,7 +56,10 @@ export default {
                             <li>Provide input on new technology or processes</li>
                             <li>Prototype and pilot internal tooling</li>
                             <li>Provide production support for applications owned by team</li>
+                            <li>Write and improve tooling to support internal printing facility and process</li>
+                            <li>Champion and build coalitions for grassroots improvements in culture, process, and sustainability</li>
                         </ul>
+                        <p>Custom Ink is a custom screen and digital apparal printing company with a focus on helping customers make their vision a reality.</p>
                     `
                 },
                 {

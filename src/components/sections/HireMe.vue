@@ -47,7 +47,7 @@
 export default {
     data() {
         return {
-            looking: false,
+            looking: 'w2',
             values: [
                 'Always Be Learning',
                 "Don't Fear Failure",

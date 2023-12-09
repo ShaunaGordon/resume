@@ -4,7 +4,7 @@
         <intro-section></intro-section>
         <skills-section></skills-section>
         <experience-section></experience-section>
-        <projects-section></projects-section>
+        {{/*  <projects-section></projects-section>  */}}
         <publications-section></publications-section>
         <hire-me-section></hire-me-section>
     </div>
