@@ -38,7 +38,7 @@ export default {
                     title: 'Senior Software Engineer',
                     company: 'Custom Ink',
                     dates: {
-                        start: 2020,
+                        start: 2021,
                         end: 2023
                     },
                     tech: {
