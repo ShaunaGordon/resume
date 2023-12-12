@@ -42,11 +42,11 @@ export default {
                     text: 'GitLab',
                     brand: true
                 },
-                {
-                    link: 'https://goo.gl/PXLSWi',
-                    icon: 'file-alt',
-                    text: 'Resume'
-                },
+                // {
+                //     link: 'https://goo.gl/PXLSWi',
+                //     icon: 'file-alt',
+                //     text: 'Resume'
+                // },
                 {
                     link: 'https://www.linkedin.com/in/gordondev/',
                     icon: 'linkedin',
