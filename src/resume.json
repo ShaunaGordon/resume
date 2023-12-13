@@ -93,7 +93,29 @@
             "endDate": "2008"
         }
     ],
-    "publications": [],
+    "publications": [
+        {
+            "name": "A Docker-Compose PHP Environment From Scratch",
+            "url": "https://x-team.com/blog/docker-compose-php-environment-from-scratch",
+            "releaseDate": "2018-07-05",
+            "publisher": "X-Team",
+            "summary": "In this tutorial, I go through the process of setting up a Docker cluster-based environment for PHP development using Docker-Compose. The cluster includes nodes for Nginx, php-fpm, and MariaDB."
+        },
+        {
+            "name": "Effective Communication While Freelancing",
+            "url": "https://gun.io/guest-posts/2019/12/effective-communication-while-freelancing",
+            "releaseDate": "2019-12-13",
+            "publisher": "Gun.io",
+            "summary": "In this article, I discuss establishing and maintaining an effective line of communication with clients."
+        },
+        {
+            "name": "From Git To Github - An Introduction to Version-Controlled and Collaborative Development",
+            "url": "https://talks.shaunagordon.com/git-to-github",
+            "releaseDate": "2021-02",
+            "publisher": "Women In Analytics",
+            "summary": "This talk and live tutorial provided attendees a crash course in enough Git and Github to get them up and running in open source contribution."
+        }
+    ],
     "skills": [
         {
             "name": "PHP",
