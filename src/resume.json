@@ -7,7 +7,8 @@
                 "she",
                 "her"
             ]
-        }
+        },
+        "theme": "kendall"
     },
     "basics": {
         "name": "Shauna Gordon",
@@ -36,159 +37,159 @@
                 "url": "https://gitlab.com/shauna",
                 "username": "shauna"
             }
-        ],
-        "work": [
-            {
-                "name": "Custom Ink",
-                "position": "Senior Software Engineer",
-                "url": "https://www.customink.com",
-                "startDate": "2021-12-21",
-                "endDate": "2023-12-29",
-                "summary": "Develop and maintain custom software to support the in-house printing facilities (IHP). Work closely with management and user stakeholders to build software that meets users’ needs and make their work more efficient, while interfacing with the hardware used in the screenprinting and direct-to-garment (DTG, digital) printing process.",
-                "highlights": [
-                    "I took ownership of the Electron and React application that powered the direct-to-garment (digital) printing process. Starting in my first year, I updated it from Electron 5 to Electron 20, React 16 to React 20, Material UI pre-1.0 to v5, and created a plan and guidelines for keeping it up to date, as well as enumerated up to date best practices.\nAdditionally, I automated the release process by creating Windows and Mac builds in CircleCI and automating the Windows releases to our release server using release-it to automatically generate Github releases.",
-                    "I implemented the new shipping interface, allowing the production team to use the Electron application from start to finish for every task, where previously, they needed to switch tools for some tasks. During this implementation, I brought large portions of the codebase up to modern standards, converting the React class-based components to function-based components, and integrating React Router and our in-house component library. I also began the process of reorganizing the file structure to modern standards to allow for better maintainability as the application grew in complexity.",
-                    "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for a near 40% increase in efficiency, a significant increase in our “delivered error-free, on-time” metrics, and a significant decrease in number of “rush” orders (including a near-elimination of facility-created rush orders).\nThe new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.",
-                    "I joined with numerous others from other teams to help triage and remedy an incident of widespread technical slowdown within the production facility. The primary root cause turned out to be a networking issue, but due to the intermittent nature of the symptoms, we went through the whole stack with a fine-toothed comb.\nFor my part, I uncovered a misconfiguration in the kubernetes settings for one of our applications that was causing it to kill and restart pods far more frequently than it should have. While this was not the source of this slowdown, I knew fixing it was necessary to ensure proper reliability of that application and those it depended on and would fix other intermittent downstream issues.",
-                    "As a side-effect of the facility slowdown situation, there was an appetite for better deployment notifications. However, the interim solution that had been implemented was very manual and cumbersome. I collaborated with several engineering managers of other teams to come up with and orchestrate the implementation of an automated notification system.\nAs part of a long-term, cross-team initiative, we came up with a plan to use Github pull requests to provide the content and the trigger of a notification that would describe in plain language what the change was doing and why, the level of risk for the deploy, and link to supplemental outputs of the development process (including the issue tracking item, project pitches, architectural decision records, Slack discussions, and anything else relevant). The automated system was then intended to take the pull request contents, display a portion of it on a unified dashboard, with a link to the full pull request for technical stakeholders, and send an email out to those who wanted it.\nAs of the time of my departure, we had taken several steps to bringing the pull requests into alignment with this vision, including working out with a broader collection of engineers a “bring your own process” for assessing the risk of a change while using the same output chart to serve as a common “language” to stakeholders, and were evaluating our existing tools and past projects to see what existing work we could leverage in this new vision."
-                ]
-            },
-            {
-                "name": "Proof Group",
-                "position": "Affiliate Software Engineer",
-                "url": "https://www.proofgeist.com",
-                "startDate": "2018-11",
-                "endDate": "2021-11",
-                "summary": "Help manage the custom Python/Django portions of client’s FileMaker-backed web application.Create a component library system that takes React, Vue, or Svelt components and creates self-contained Web Components for both general web use and use inside FileMaker.",
-                "highlights": [
-                    "I researched and developed a component library and build tool that could take Vue, React, or Svelt components and output self-contained, vanilla Web Components that could be used either in standard web applications, or within FileMaker’s environment (which required additional processing to make all of the component’s dependencies self-contained)."
-                ]
-            },
-            {
-                "name": "Rocket Code",
-                "position": "Senior Backend Engineer",
-                "startDate": "2016-10",
-                "endDate": "2018-02",
-                "summary": "Develop custom integrations between Shopify and other platforms using PHP. Work with front end developers to ensure proper data and data shape for front end work. Develop custom tools with PHP, Laravel, and VueJS that included Shopify integrations. Create and maintain Ruby Shopify checkout and cart scripts.",
-                "highlights": [
-                    "I built a fully unit-tested, custom, bi-directional, ETL integration layer to allow Shopify act as Journelle’s online storefront.\nThis layer:\n-Took orders from Shopify and sent them to Netsuite for fulfillment\n-Took Netsuite’s fulfillment updates and sent them to Shopify for customer updates\n-Took inventory information from Netsuite and sent it to Shopify, transforming it to allow for the automatic creation of products, variants, and collections, and with the use of tags, populate collections such that the custom storefront displayed them as single products (necessary due to the number of variants for the products)\n-Synced gift card information between Shopify and Netsuite to enable customers to use their brick-and-mortar store-created gift cards on the website"
-                ]
-            }
-        ],
-        "volunteer": [
-        ],
-        "education": [
-            {
-                "institution": "Keller Graduate School of Management",
-                "area": "Information Systems Management",
-                "studyType": "Master",
-                "endDate": "2012"
-            },
-            {
-                "institution": "DeVry University",
-                "area": "Computer Information Systems",
-                "studyType": "Bachelor",
-                "endDate": "2008"
-            }
-        ],
-        "publications": [],
-        "skills": [
-            {
-                "name": "PHP",
-                "level": "Master",
-                "keywords": [
-                    "Laravel",
-                    "7.1",
-                    "5.3"
-                ]
-            },
-            {
-                "name": "Ruby",
-                "level": "Advanced",
-                "keywords": [
-                    "Rails"
-                ]
-            },
-            {
-                "name": "Javascript",
-                "level": "Master",
-                "keywords": [
-                    "React",
-                    "Vue",
-                    "Electron",
-                    "NodeJS",
-                    "Webpack"
-                ]
-            },
-            {
-                "name": "Python",
-                "level": "Advanced"
-            },
-            {
-                "name": "CSS",
-                "level": "Master",
-                "keywords": [
-                    "Less",
-                    "SASS"
-                ]
-            },
-            {
-                "name": "Database",
-                "level": "Master",
-                "keywords": [
-                    "SQL",
-                    "Data Modeling",
-                    "Database Design",
-                    "MySQL",
-                    "MariaDB",
-                    "Redis"
-                ]
-            },
-            {
-                "name": "Test Driven Development",
-                "level": "Master",
-                "keywords": [
-                    "Jest",
-                    "PHPUnit",
-                    "Rspec",
-                    "Minitest",
-                    "Pytest"
-                ]
-            },
-            {
-                "name": "CI/CD",
-                "level": "Advanced",
-                "keywords": [
-                    "CircleCI",
-                    "Travis CI",
-                    "Github Actions"
-                ]
-            },
-            {
-                "name": "Operating Systems",
-                "level": "Master",
-                "keywords": [
-                    "Linux",
-                    "Mac",
-                    "Windows"
-                ]
-            },
-            {
-                "name": "Containers",
-                "level": "Advanced",
-                "keywords": [
-                    "Docker",
-                    "Dev Containers",
-                    "Kubernetes",
-                    "Infrastructure as Code"
-                ]
-            }
-        ],
-        "languages": [
-            {
-                "language": "English",
-                "fluency": "Native"
-            }
         ]
-    }
+    },
+    "work": [
+        {
+            "name": "Custom Ink",
+            "position": "Senior Software Engineer",
+            "url": "https://www.customink.com",
+            "startDate": "2021-12-21",
+            "endDate": "2023-12-29",
+            "summary": "Develop and maintain custom software to support the in-house printing facilities (IHP). Work closely with management and user stakeholders to build software that meets users’ needs and make their work more efficient, while interfacing with the hardware used in the screenprinting and direct-to-garment (DTG, digital) printing process.",
+            "highlights": [
+                "I took ownership of the Electron and React application that powered the direct-to-garment (digital) printing process. Starting in my first year, I updated it from Electron 5 to Electron 20, React 16 to React 20, Material UI pre-1.0 to v5, and created a plan and guidelines for keeping it up to date, as well as enumerated up to date best practices.\nAdditionally, I automated the release process by creating Windows and Mac builds in CircleCI and automating the Windows releases to our release server using release-it to automatically generate Github releases.",
+                "I implemented the new shipping interface, allowing the production team to use the Electron application from start to finish for every task, where previously, they needed to switch tools for some tasks. During this implementation, I brought large portions of the codebase up to modern standards, converting the React class-based components to function-based components, and integrating React Router and our in-house component library. I also began the process of reorganizing the file structure to modern standards to allow for better maintainability as the application grew in complexity.",
+                "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for a near 40% increase in efficiency, a significant increase in our “delivered error-free, on-time” metrics, and a significant decrease in number of “rush” orders (including a near-elimination of facility-created rush orders).\nThe new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.",
+                "I joined with numerous others from other teams to help triage and remedy an incident of widespread technical slowdown within the production facility. The primary root cause turned out to be a networking issue, but due to the intermittent nature of the symptoms, we went through the whole stack with a fine-toothed comb.\nFor my part, I uncovered a misconfiguration in the kubernetes settings for one of our applications that was causing it to kill and restart pods far more frequently than it should have. While this was not the source of this slowdown, I knew fixing it was necessary to ensure proper reliability of that application and those it depended on and would fix other intermittent downstream issues.",
+                "As a side-effect of the facility slowdown situation, there was an appetite for better deployment notifications. However, the interim solution that had been implemented was very manual and cumbersome. I collaborated with several engineering managers of other teams to come up with and orchestrate the implementation of an automated notification system.\nAs part of a long-term, cross-team initiative, we came up with a plan to use Github pull requests to provide the content and the trigger of a notification that would describe in plain language what the change was doing and why, the level of risk for the deploy, and link to supplemental outputs of the development process (including the issue tracking item, project pitches, architectural decision records, Slack discussions, and anything else relevant). The automated system was then intended to take the pull request contents, display a portion of it on a unified dashboard, with a link to the full pull request for technical stakeholders, and send an email out to those who wanted it.\nAs of the time of my departure, we had taken several steps to bringing the pull requests into alignment with this vision, including working out with a broader collection of engineers a “bring your own process” for assessing the risk of a change while using the same output chart to serve as a common “language” to stakeholders, and were evaluating our existing tools and past projects to see what existing work we could leverage in this new vision."
+            ]
+        },
+        {
+            "name": "Proof Group",
+            "position": "Affiliate Software Engineer",
+            "url": "https://www.proofgeist.com",
+            "startDate": "2018-11",
+            "endDate": "2021-11",
+            "summary": "Help manage the custom Python/Django portions of client’s FileMaker-backed web application.Create a component library system that takes React, Vue, or Svelt components and creates self-contained Web Components for both general web use and use inside FileMaker.",
+            "highlights": [
+                "I researched and developed a component library and build tool that could take Vue, React, or Svelt components and output self-contained, vanilla Web Components that could be used either in standard web applications, or within FileMaker’s environment (which required additional processing to make all of the component’s dependencies self-contained)."
+            ]
+        },
+        {
+            "name": "Rocket Code",
+            "position": "Senior Backend Engineer",
+            "startDate": "2016-10",
+            "endDate": "2018-02",
+            "summary": "Develop custom integrations between Shopify and other platforms using PHP. Work with front end developers to ensure proper data and data shape for front end work. Develop custom tools with PHP, Laravel, and VueJS that included Shopify integrations. Create and maintain Ruby Shopify checkout and cart scripts.",
+            "highlights": [
+                "I built a fully unit-tested, custom, bi-directional, ETL integration layer to allow Shopify act as Journelle’s online storefront.\nThis layer:\n-Took orders from Shopify and sent them to Netsuite for fulfillment\n-Took Netsuite’s fulfillment updates and sent them to Shopify for customer updates\n-Took inventory information from Netsuite and sent it to Shopify, transforming it to allow for the automatic creation of products, variants, and collections, and with the use of tags, populate collections such that the custom storefront displayed them as single products (necessary due to the number of variants for the products)\n-Synced gift card information between Shopify and Netsuite to enable customers to use their brick-and-mortar store-created gift cards on the website"
+            ]
+        }
+    ],
+    "volunteer": [
+    ],
+    "education": [
+        {
+            "institution": "Keller Graduate School of Management",
+            "area": "Information Systems Management",
+            "studyType": "Master",
+            "endDate": "2012"
+        },
+        {
+            "institution": "DeVry University",
+            "area": "Computer Information Systems",
+            "studyType": "Bachelor",
+            "endDate": "2008"
+        }
+    ],
+    "publications": [],
+    "skills": [
+        {
+            "name": "PHP",
+            "level": "Master",
+            "keywords": [
+                "Laravel",
+                "7.1",
+                "5.3"
+            ]
+        },
+        {
+            "name": "Ruby",
+            "level": "Advanced",
+            "keywords": [
+                "Rails"
+            ]
+        },
+        {
+            "name": "Javascript",
+            "level": "Master",
+            "keywords": [
+                "React",
+                "Vue",
+                "Electron",
+                "NodeJS",
+                "Webpack"
+            ]
+        },
+        {
+            "name": "Python",
+            "level": "Advanced"
+        },
+        {
+            "name": "CSS",
+            "level": "Master",
+            "keywords": [
+                "Less",
+                "SASS"
+            ]
+        },
+        {
+            "name": "Database",
+            "level": "Master",
+            "keywords": [
+                "SQL",
+                "Data Modeling",
+                "Database Design",
+                "MySQL",
+                "MariaDB",
+                "Redis"
+            ]
+        },
+        {
+            "name": "Test Driven Development",
+            "level": "Master",
+            "keywords": [
+                "Jest",
+                "PHPUnit",
+                "Rspec",
+                "Minitest",
+                "Pytest"
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "level": "Advanced",
+            "keywords": [
+                "CircleCI",
+                "Travis CI",
+                "Github Actions"
+            ]
+        },
+        {
+            "name": "Operating Systems",
+            "level": "Master",
+            "keywords": [
+                "Linux",
+                "Mac",
+                "Windows"
+            ]
+        },
+        {
+            "name": "Containers",
+            "level": "Advanced",
+            "keywords": [
+                "Docker",
+                "Dev Containers",
+                "Kubernetes",
+                "Infrastructure as Code"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native"
+        }
+    ]
 }
