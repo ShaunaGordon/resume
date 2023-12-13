@@ -48,7 +48,7 @@ export default {
                 {
                     title: 'Effective Communication While Freelancing',
                     publication: 'Gun.io Blog',
-                    link: 'https://www.gun.io/blog/effective-communication-while-freelancing',
+                    link: 'https://gun.io/guest-posts/2019/12/effective-communication-while-freelancing',
                     info: '<p>In this article, I discuss establishing and maintaining an effective line of communication with clients.</p>'
                 },
                 {
