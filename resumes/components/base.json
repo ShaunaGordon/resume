@@ -1,0 +1,82 @@
+{
+    "comment": "Base info that doesn't change, regardless of job or field.",
+    "meta": {
+        "additionalData": {
+            "pronouns": [
+                "she",
+                "her"
+            ]
+        }
+    },
+    "basics": {
+        "name": "Shauna Gordon",
+        "label": "Senior Software Engineer",
+        "image": "http://resume.shaunagordon.com/img/avatar.png",
+        "email": "shauna@gordons.me",
+        "url": "http://shaunagordon.com",
+        "location": {
+            "city": "Columbus",
+            "countryCode": "US",
+            "region": "Ohio"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "url": "https://www.linkedin.com/in/gordondev/",
+                "username": "gordondev"
+            },
+            {
+                "network": "GitHub",
+                "url": "https://github.com/ShaunaGordon",
+                "username": "ShaunaGordon"
+            },
+            {
+                "network": "GitLab",
+                "url": "https://gitlab.com/shauna",
+                "username": "shauna"
+            }
+        ]
+    },
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native"
+        }
+    ],
+    "education": [
+        {
+            "institution": "Keller Graduate School of Management",
+            "area": "Information Systems Management",
+            "studyType": "Master",
+            "endDate": "2012"
+        },
+        {
+            "institution": "DeVry University",
+            "area": "Computer Information Systems",
+            "studyType": "Bachelor",
+            "endDate": "2008"
+        }
+    ],
+    "references": [
+        {
+            "name": "Chris Impicciche",
+            "url": "https://www.linkedin.com/in/chris-impicciche/",
+            "reference": "During our time working together, I had numerous opportunities to collaborate with Shauna, despite not being on the same team. She was quick to offer her assistance in Ruby/Rails and provided valuable support whenever needed. I was consistently impressed by Shauna's inquisitive nature, approach to learning new technologies, and friendly demeanor. I appreciate the chance to have worked alongside her and firmly believe she would be a valuable addition to any tech team."
+        },
+        {
+            "name": "Fatemeh Abniki",
+            "url": "https://www.linkedin.com/in/fatemeh-abniki-583510224/",
+            "reference": "Shauna is an exceptionally talented engineer . She consistently demonstrates a high level of expertise, problem-solving skills, and creativity in tackling complex technical challenges. <br>Moreover, Shauna is an excellent team player who collaborates effectively with colleagues across different departments. She communicates ideas and solutions clearly, making her a valuable asset in both individual and collaborative settings. Her positive attitude, willingness to learn, and adaptability to new technologies make her a standout performer."
+        },
+        {
+            "name": "Jonalyn Blunt",
+            "url": "https://www.linkedin.com/in/jonalynblunt/",
+            "reference": "Shauna is an outstanding engineer; I cannot recommend her enough. I collaborated with Shauna on a weekly basis as the lead UX Designer for a new digital tool we created inside an existing in-house application. The tool was released to overwhelming positive feedback and a high adoption rate, which is a testament to Shauna's great skills as an engineer. <br>I was impressed with Shauna's attention to detail, and dedication to the tool — not only to eliminate tech debt and get the application where it needed to be on a foundational level, but being able to think through the experience holistically — foreseeing challenges for users and the tool, and championing to fix the root cause. Shauna is a person you want in the room with you to discuss ideas and to deliver results; she is an exceptional addition to any team."
+        },
+        {
+            "name": "Chris Murphy",
+            "url": "https://www.linkedin.com/in/christopher-murphy-1375155/",
+            "reference": "I met Shauna at Custom Ink, in fact I helped interview her and was one of several to give a 👍. I never had the pleasure of working on a project with Shauna (different domain/team), but we both seemed to care about the same non-project concerns that we felt were being neglected. That was mainly around our state of documentation at the time (multiple, siloed knowledge bases of varying quality), technical debt problems, and occasional change management issues. We often bounced ideas off each other and I always found her opinions and feedback insightful. I also appreciated the ideas she brought to wider engineering discussions at things like all-hands, hack-a-thons, and show & tell. She's not afraid to speak up about what she cares about, a quality I wish more engineers had to be honest. <br>As for Shauna's engineering skills, I know she wasn't afraid to dive deep into the systems (some being *very* \"legacy\") that her team owned, to figure out a solution for the project at hand. The tech stack there was typically Ruby on Rails and React, both she's highly skilled in. I think any company would be lucky to have Shana on board and I highly recommend her."
+        }
+    ]
+}
