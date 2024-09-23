@@ -21,7 +21,7 @@
       </article>
     </section>
     <footer>
-      
+
     </footer>
   </section>
 </template>
@@ -198,24 +198,24 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style>
 #experience {
   .card {
     h3 {
       margin-bottom: .5rem;
     }
-    
+
     h4 {
       margin: 0;
       opacity: .6;
     }
   }
-  
+
   .info li {
     list-style-type: circle;
     padding: 3px 2px;
     transition: all 1.5s;
-    
+
     &:hover {
       background: rgba(97,122,113,.06);
     }

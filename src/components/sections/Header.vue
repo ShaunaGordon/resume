@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style>
     header {
         font-family: 'Forum', Helvetica, Arial, sans-serif;
     }

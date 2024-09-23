@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style>
 body {
     background-color: #f0f0ec;
     margin-bottom: 1rem;
