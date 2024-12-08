@@ -18,18 +18,22 @@ const loadFile = (path) => {
 };
 
 export const getResume = (resume) => {
-    if(!resumes[resume]) return 'Invalid resume selection.';
+    if(!resume in resumes) return 'Invalid resume selection.';
 
-    loadFile(`../resumes/${resumes[resume]}`)
-        .then((file) => {
-            if(file.extends) {
-                file.extends.forEach((path) => {
-                    loadFile(`../resumes/${path}`)
-                        .then((piece) => {
+    let resumeData = {};
 
-                        })
-                })
-            }
-        })
+    loadFile(`../resumes/${resume}`)
+    .then((file) => {
+        resumeData = file;
+        if(file.extends) {
+            const extendsList = file.extends;
+            resumeData = extendsList.reduce((path) => {
+                loadFile(`../resumes/${path}`)
+                .then((piece) => {
+                    return mergeDeepWith(concat, resumeData, piece);
+                }, file);
+            });
+        }
+    });
 
 };

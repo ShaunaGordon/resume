@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div>
         <header-section></header-section>
         <intro-section></intro-section>
         <skills-section></skills-section>
@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import HeaderSection from './components/sections/Header.vue';
 import IntroSection from './components/sections/Intro.vue';
 import SkillsSection from './components/sections/Skills.vue';
@@ -18,18 +18,10 @@ import ProjectsSection from './components/sections/Projects.vue';
 import PublicationsSection from './components/sections/Publications.vue';
 import HireMeSection from './components/sections/HireMe.vue';
 
-export default {
-    name: 'app',
-    components: {
-        HeaderSection,
-        IntroSection,
-        SkillsSection,
-        ExperienceSection,
-        ProjectsSection,
-        PublicationsSection,
-        HireMeSection
-    }
-}
+import { resumes, getResume } from './loadResume.js';
+
+const resume = getResume(resumes.engineering);
+console.log(resume)
 </script>
 
 <style>
