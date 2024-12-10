@@ -10,8 +10,8 @@
     },
     "basics": {
         "name": "Shauna Gordon",
-        "label": "Senior Software Engineer",
-        "summary": "I make things",
+        "label": "And I make things",
+        "summary": "I'm a problem-solver by nature and by profession. I have a natural drive to find solutions to problems spoken and unspoken. By digging down through pain points, I excel in finding the heart of issues and coming up with the best solution within the constraints of the environment.\n\nWhile I've historically specialized in PHP, I always enjoy learning new things, and have recently been neck-deep in React and Electron while at a Ruby on Rails shop, and had a lot of fun dabbling in Rust and Tauri. I've also been eyeing software architecture and program management as potential roles to grow into.",
         "image": "http://resume.shaunagordon.com/img/avatar.png",
         "email": "shauna@gordons.me",
         "url": "http://shaunagordon.com",

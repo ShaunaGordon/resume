@@ -1,14 +1,12 @@
 <template>
     <header-section :data="resume.basics"></header-section>
-    <intro-section></intro-section>
+    <intro-section :data="resume.basics"></intro-section>
 </template>
 
 <script setup>
 import { onMounted, onBeforeMount, ref } from 'vue';
 import HeaderSection from './components/sections/Header.vue';
 import IntroSection from './components/sections/Intro.vue';
-
-import VueMarkdown from 'vue-markdown-render';
 
 import { resumes, getResume } from './loadResume.js';
 

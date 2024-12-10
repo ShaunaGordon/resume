@@ -3,7 +3,7 @@
       <header>
           <img class="avatar" :src="data?.image" />
           <h1>I'm {{  data?.name }}</h1>
-          <h2>And {{ data?.summary }}</h2>
+          <h2>{{ data?.label }}</h2>
       </header>
       <nav>
           <ul>
