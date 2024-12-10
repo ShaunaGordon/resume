@@ -1,27 +1,23 @@
 <template>
-    <div>
-        <header-section></header-section>
-        <intro-section></intro-section>
-        <skills-section></skills-section>
-        <experience-section></experience-section>
-        <publications-section></publications-section>
-        <hire-me-section></hire-me-section>
-    </div>
+    <header-section :data="resume.basics"></header-section>
+    <intro-section></intro-section>
 </template>
 
 <script setup>
+import { onMounted, onBeforeMount, ref } from 'vue';
 import HeaderSection from './components/sections/Header.vue';
 import IntroSection from './components/sections/Intro.vue';
-import SkillsSection from './components/sections/Skills.vue';
-import ExperienceSection from './components/sections/Experience.vue';
-import ProjectsSection from './components/sections/Projects.vue';
-import PublicationsSection from './components/sections/Publications.vue';
-import HireMeSection from './components/sections/HireMe.vue';
+
+import VueMarkdown from 'vue-markdown-render';
 
 import { resumes, getResume } from './loadResume.js';
 
-const resume = getResume(resumes.engineering);
-console.log(resume)
+const resume = ref({});
+
+onBeforeMount(() => {
+    getResume(resumes.engineering).then(result => resume.value = result);
+});
+
 </script>
 
 <style>

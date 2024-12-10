@@ -11,6 +11,7 @@
     "basics": {
         "name": "Shauna Gordon",
         "label": "Senior Software Engineer",
+        "summary": "I make things",
         "image": "http://resume.shaunagordon.com/img/avatar.png",
         "email": "shauna@gordons.me",
         "url": "http://shaunagordon.com",
@@ -21,9 +22,8 @@
         },
         "profiles": [
             {
-                "network": "LinkedIn",
-                "url": "https://www.linkedin.com/in/gordondev/",
-                "username": "gordondev"
+                "network": "Blog",
+                "url": "https://shaunagordon.com"
             },
             {
                 "network": "GitHub",
@@ -34,6 +34,15 @@
                 "network": "GitLab",
                 "url": "https://gitlab.com/shauna",
                 "username": "shauna"
+            },
+            {
+                "network": "LinkedIn",
+                "url": "https://www.linkedin.com/in/gordondev/",
+                "username": "gordondev"
+            },
+            {
+                "network": "Slide Decks",
+                "url": "https://talks.shaunagordon.com"
             }
         ]
     },

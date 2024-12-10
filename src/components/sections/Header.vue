@@ -1,15 +1,15 @@
 <template>
   <section id="top">
       <header>
-          <img class="avatar" src="/img/avatar.png" />
-          <h1>I'm Shauna Gordon</h1>
-          <h2>And I Make Things</h2>
+          <img class="avatar" :src="data?.image" />
+          <h1>I'm {{  data?.name }}</h1>
+          <h2>And {{ data?.summary }}</h2>
       </header>
       <nav>
           <ul>
-              <li v-for="(item, i) in nav" :key="i">
-                  <a :href="item.link" target="_blank">
-                      <i :class="item.brand ? getFaBrandClass(item.icon) : getFaClass(item.icon)"></i> {{ item.text }}
+              <li v-for="(item, i) in data?.profiles" :key="i">
+                  <a :href="item.url" target="_blank">
+                      <i :class="networks[item.network.toLowerCase()].brand ? getFaBrandClass(networks[item.network.toLowerCase()].icon) : getFaClass(networks[item.network.toLowerCase()].icon)"></i> {{ item.network }}
                   </a>
               </li>
           </ul>
@@ -17,49 +17,39 @@
   </section>
 </template>
 
-<script>
-import icons from '../../mixins/icons';
+<script setup>
+import { defineProps } from 'vue';
+import { useIcons } from '../../mixins/icons';
 
-export default {
-    mixins: [icons],
-    data() {
-        return {
-            nav: [
-                {
-                    link: 'https://shaunagordon.com/',
-                    icon: 'pencil-alt',
-                    text: 'Blog'
-                },
-                {
-                    link: 'https://github.com/ShaunaGordon',
-                    icon: 'github-alt',
-                    text: 'GitHub',
-                    brand: true
-                },
-                {
-                    link: 'https://gitlab.com/shauna',
-                    icon: 'gitlab',
-                    text: 'GitLab',
-                    brand: true
-                },
-                // {
-                //     link: 'https://goo.gl/PXLSWi',
-                //     icon: 'file-alt',
-                //     text: 'Resume'
-                // },
-                {
-                    link: 'https://www.linkedin.com/in/gordondev/',
-                    icon: 'linkedin',
-                    text: 'LinkedIn',
-                    brand: true
-                },
-                {
-                    link: 'https://talks.shaunagordon.com',
-                    icon: 'chalkboard-teacher',
-                    text: 'Slide Decks'
-                }
-            ]
-        }
+const {getFaBrandClass, getFaClass} = useIcons();
+
+const props = defineProps(['data']);
+
+const networks = {
+    blog: {
+        brand: false,
+        icon: 'pencil-alt'
+    },
+    github: {
+        icon: 'github-alt',
+        brand: true
+    },
+    gitlab: {
+        icon: 'gitlab',
+        brand: true
+    },
+    // {
+    //     link: 'https://goo.gl/PXLSWi',
+    //     icon: 'file-alt',
+    //     text: 'Resume'
+    // },
+    linkedin: {
+        icon: 'linkedin',
+        brand: true
+    },
+    "slide decks": {
+        icon: 'chalkboard-teacher',
+        brand: false
     }
 }
 </script>
