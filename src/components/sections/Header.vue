@@ -1,13 +1,13 @@
 <template>
   <section id="top">
       <header>
-          <img class="avatar" :src="data?.image" />
-          <h1>I'm {{  data?.name }}</h1>
-          <h2>{{ data?.label }}</h2>
+          <img class="avatar" :src="basics?.image" />
+          <h1 :title="meta?.additionalData?.pronouns.join('/')">I'm {{  basics?.name }}</h1>
+          <h2>{{ basics?.label }}</h2>
       </header>
       <nav>
           <ul>
-              <li v-for="(item, i) in data?.profiles" :key="i">
+              <li v-for="(item, i) in basics?.profiles" :key="i">
                   <a :href="item.url" target="_blank">
                       <i :class="networks[item.network.toLowerCase()].brand ? getFaBrandClass(networks[item.network.toLowerCase()].icon) : getFaClass(networks[item.network.toLowerCase()].icon)"></i> {{ item.network }}
                   </a>
@@ -21,9 +21,9 @@
 import { defineProps } from 'vue';
 import { useIcons } from '../../mixins/icons';
 
-const {getFaBrandClass, getFaClass} = useIcons();
+const { getFaBrandClass, getFaClass } = useIcons();
 
-const props = defineProps(['data']);
+const { basics, meta } = defineProps(['basics', 'meta']);
 
 const networks = {
     blog: {
@@ -53,34 +53,3 @@ const networks = {
     }
 }
 </script>
-
-<style>
-    header {
-        font-family: 'Forum', Helvetica, Arial, sans-serif;
-    }
-
-    h1 {
-        font-size: 6rem;
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-    }
-
-    .avatar {
-        max-width: 300px;
-    }
-
-    nav {
-        padding-bottom: 1.25rem;
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, 10rem);
-            justify-content: space-between;
-
-            li {
-                list-style-type: none;
-                text-align: center;
-            }
-        }
-    }
-</style>

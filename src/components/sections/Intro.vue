@@ -15,6 +15,3 @@ const { toMarkdown } = useMarkdown();
 
 const props = defineProps(['data']);
 </script>
-
-<style>
-</style>

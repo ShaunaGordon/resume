@@ -6,7 +6,10 @@
             "url": "https://talks.shaunagordon.com/git-to-github",
             "releaseDate": "2021-02",
             "publisher": "Women In Analytics",
-            "summary": "This talk and live tutorial provided attendees a crash course in enough Git and Github to get them up and running in open source contribution."
+            "summary": "This talk and live tutorial provided attendees a crash course in enough Git and Github to get them up and running in open source contribution.",
+            "tech": {
+                "git": "Git"
+            }
         },
         {
             "name": "Effective Communication While Freelancing",
@@ -20,7 +23,14 @@
             "url": "https://x-team.com/blog/docker-compose-php-environment-from-scratch",
             "releaseDate": "2018-07-05",
             "publisher": "X-Team",
-            "summary": "In this tutorial, I go through the process of setting up a Docker cluster-based environment for PHP development using Docker-Compose. The cluster includes nodes for Nginx, php-fpm, and MariaDB."
+            "summary": "In this tutorial, I go through the process of setting up a Docker cluster-based environment for PHP development using Docker-Compose. The cluster includes nodes for Nginx, php-fpm, and MariaDB.",
+            "tech": {
+                "php": "PHP",
+                "docker": "Docker",
+                "linux": "Linux",
+                "mysql": "MariaDB",
+                "nginx": "Nginx"
+            }
         }
     ]
 }
