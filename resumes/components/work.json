@@ -1,0 +1,118 @@
+{
+    "comment": "Job history. Shouldn't change, but keeping in its own to avoid importing unnecessarily if it does.",
+    "work": [
+        {
+            "name": "Genome Studios",
+            "position": "Principal Software Engineer",
+            "url": "https://genomestudios.ca/",
+            "startDate": "2024-01",
+            "summary": "Helped establish a small development studio in the gaming industry by working closely with studio founder to architect and implement technical projects, including games, supplemental engine utilities, engine features and bug fixes, and others. Worked with the Open 3D Engine (O3DE) community to submit contributions back to the project.",
+            "highlights": [
+                "Provided guidance on organization and engineering direction",
+                "Contributed to Open 3D Engine (O3DE) open source project on behalf of the company",
+                "Made code changes to game engine to facilitate game production",
+                "Aided in technical solution design for game mechanics",
+                "Built complementary tools for desktop or web to help grow the O3DE community and Genome's name within it"
+            ],
+            "tech": {
+                "cplusplus": "C++",
+                "bitbucket": "Bitbucket",
+                "github": "GitHub",
+                "confluence": "Confluence",
+                "hugo": "Hugo",
+                "linux": "Linux",
+                "netlify": "Netlify",
+                "o3de": "Open 3D Engine",
+                "cmake": "CMake",
+                "python": "Python",
+                "qt": "Qt",
+                "vitejs": "ViteJS",
+                "vuejs": "VueJS"
+            }
+        },
+        {
+            "name": "Custom Ink",
+            "position": "Senior Software Engineer",
+            "url": "https://www.customink.com",
+            "startDate": "2021-12",
+            "endDate": "2023-12",
+            "summary": "Developed and maintained custom software to support the in-house printing facilities (IHP). Worked closely with management and user stakeholders to build software that met users' needs and made their work more efficient, while interfacing with the hardware used in the screenprinting and direct-to-garment (DTG, digital) printing process.",
+            "highlights": [
+                "Implemented changes with an impact of $650k in annual savings",
+                "Took ownership of software fundamental to the DTG process",
+                "Worked across teams and roles to plan and implement process and quality of life improvements",
+                "Experimented on ways to create better technological solutions to applicable problems"
+            ],
+            "tech": {
+                "ruby": "Ruby",
+                "rails": "Rails",
+                "nodejs": "Node",
+                "react": "React",
+                "github": "GitHub",
+                "docker": "Docker",
+                "argocd": "Argo CD",
+                "electron": "Electron",
+                "circleci": "CircleCI"
+            }
+        },
+        {
+            "name": "Proof Group",
+            "position": "Affiliate Software Engineer",
+            "url": "https://www.proofgeist.com",
+            "startDate": "2018-11",
+            "endDate": "2021-11",
+            "summary": "Helped manage the custom Python/Django portions of client's FileMaker-backed web application.Create a component library system that took React, Vue, or Svelt components and created self-contained Web Components for both general web use and use inside FileMaker.",
+            "highlights": [
+                "Researched and developed a component library and build tool that could take Vue, React, or Svelt components and output self-contained, vanilla Web Components that could be used either in standard web applications, or within FileMaker's environment (which required additional processing to make all of the component's dependencies self-contained)."
+            ],
+            "tech": {
+                "python": "Python",
+                "django": "Django",
+                "github": "GitHub",
+                "nodejs": "Node"
+            }
+        },
+        {
+            "name": "Rocket Code",
+            "position": "Senior Backend Engineer",
+            "startDate": "2016-10",
+            "endDate": "2018-02",
+            "summary": "Develop custom integrations between Shopify and other platforms using PHP. Work with front end developers to ensure proper data and data shape for front end work. Develop custom tools with PHP, Laravel, and VueJS that included Shopify integrations. Create and maintain Ruby Shopify checkout and cart scripts.",
+            "highlights": [
+                "Worked closely with Front-End Engineers to expand Shopify's capabilities",
+                "Built custom API-based integrations between platforms",
+                "Wrote Ruby-based Shopify checkout and line item scripts to modify cart behavior",
+                "Used queue systems to handle imports of large datasets into Shopify and other APIs",
+                "Planned and documented API endpoints using Swagger/OpenAPI",
+                "Piloted new techniques, technologies, and learning resources for the team",
+                "Provided culture guidance/feedback to CEO during acquisition of Rocket Code"
+            ],
+            "tech": {
+                "php": "PHP",
+                "laravel": "Laravel",
+                "mysql": "MySQL",
+                "redis": "Redis",
+                "javascript": "Javascript",
+                "nodejs": "Node",
+                "vuejs": "VueJS",
+                "github": "GitHub",
+                "docker": "Docker",
+                "ubuntu": "Ubuntu",
+                "nginx": "Nginx"
+            }
+        },
+        {
+            "name": "Core-Apps",
+            "position": "Engineer, GoExpo Division",
+            "startDate": "2014",
+            "endDate": "2015",
+            "summary": "",
+            "tech": {
+                "php": "PHP",
+                "laravel": "Laravel",
+                "mysql": "MySQL",
+                "javascript": "Javascript"
+            }
+        }
+    ]
+}
