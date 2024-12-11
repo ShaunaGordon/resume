@@ -34,7 +34,7 @@ jobs:
       run: yarn build
     - run: cp CNAME ./dist/CNAME
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.7.2
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
