@@ -33,6 +33,7 @@ jobs:
     - name: Build
       run: yarn build-only
     - run: cp CNAME ./dist/CNAME
+    - run: cp -r resumes ./dist/resumes
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
