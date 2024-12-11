@@ -1,0 +1,43 @@
+{
+    "comment": "Non-technical writing focused.",
+    "extends": [
+        "components/base.json",
+        "components/work.json",
+        "components/publications.json",
+        "components/volunteer.json"
+    ],
+    "meta": {
+        "version": "1.0",
+        "lastModified": "2024-08-30"
+    },
+    "projects": [
+
+    ],
+    "skills": [
+        {
+            "name": "Writing",
+            "level": "Master",
+            "keywords": []
+        },
+        {
+            "name": "Editing",
+            "level": "Advanced",
+            "keywords": [
+                "Proofreading",
+                "Tone",
+                "Voice"
+            ]
+        },
+        {
+            "name": "Tooling",
+            "level": "Advanced",
+            "keywords": [
+                "Pandoc",
+                "Word Processors",
+                "ePub",
+                "Blog Software",
+                "Static Site Generators"
+            ]
+        }
+    ]
+}

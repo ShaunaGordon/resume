@@ -1,0 +1,210 @@
+{
+    "comment": "Engineering resume. Highly technical.",
+    "extends": [
+        "components/base.json",
+        "components/work.json",
+        "components/publications.json",
+        "components/volunteer.json"
+    ],
+    "meta": {
+        "version": "2.0",
+        "lastModified": "2024-08-30"
+    },
+    "projects": [
+        {
+            "name": "Deployment Notification Automation Initiative",
+            "entity":"Custom Ink",
+            "description": "As a side-effect of a facility slowdown situation, there was an appetite for better deployment notifications. However, the interim solution that had been implemented was very manual and cumbersome. So, I collaborated with several engineering managers of other teams to come up with and orchestrate the implementation of an automated notification system.\n\nAs part of a long-term, cross-team initiative, we came up with a plan to use Github pull requests to provide the content and the trigger of a notification that would describe in plain language what the change was doing and why, the level of risk for the deploy, and link to supplemental outputs of the development process (including the issue tracking item, project pitches, architectural decision records, Slack discussions, and anything else relevant). The automated system was then intended to take the pull request contents, display a portion of it on a unified dashboard, with a link to the full pull request for technical stakeholders, and send an email out to those who wanted it.\n\nAs of the time of my departure, we had taken several steps to bringing the pull requests into alignment with this vision, including working out with a broader collection of engineers a \"bring your own process\" for assessing the risk of a change while using the same output chart to serve as a common \"language\" to stakeholders, and were evaluating our existing tools and past projects to see what existing work we could leverage in this new vision.",
+            "highlights": [
+                "Created a new method for teams to communicate the risk of deploying a given pull request",
+                "Created a way for teams to determine their own criteria, while still distilling it down to a final set of values common across teams",
+                "Designed a system to automate nearly all steps in a manual and error-prone process",
+                "Created a pull request template to provide information to both technical and non-technical stakeholders about the changes made in the pull request"
+            ],
+            "keywords": [
+                "Cross-team Problem Solving",
+                "Multi-system Architecture",
+                "Process Improvement",
+                "Process Automation"
+            ],
+            "startDate": "2023-08",
+            "endDate": "2023-12"
+        },
+        {
+            "name": "Electron Application Shipping Tool Feature",
+            "entity": "Custom Ink",
+            "description": "I implemented the new shipping interface, allowing the production team to use the Electron application from start to finish for every task, where previously, they needed to switch tools for some tasks. During this implementation, I brought large portions of the codebase up to modern standards, converting the React class-based components to function-based components, and integrating React Router and our in-house component library. I also began the process of reorganizing the file structure to modern standards to allow for better maintainability as the application grew in complexity.",
+            "highlights": [
+                "**Impact:** $210k annual production cost savings + untracked engineer maintenance cost savings",
+                "Began enacting previously-created plan to modernize codebase",
+                "Converted many components from class-based to function-based",
+                "Retrofitted with React Router and in-house component library"
+            ],
+            "keywords": [
+                "Electron",
+                "React",
+                "React Router",
+                "Refactoring"
+            ],
+            "startDate": "2023-07",
+            "endDate": "2023-12"
+        },
+        {
+            "name": "Electron Application Upgrade",
+            "entity": "Custom Ink",
+            "description": "I took ownership of the Electron and React application that powered the direct-to-garment (digital) printing process. Starting in my first year, I updated it from Electron 5 to Electron 20, React 16 to React 20, Material UI pre-1.0 to v5, and created a plan and guidelines for keeping it up to date, as well as enumerated up to date best practices.<br>Additionally, I automated the release process by creating Windows and Mac builds in CircleCI and automating the Windows releases to our release server using release-it to automatically generate Github releases.",
+            "highlights": [
+                "Performed a major, breaking upgrade that remained invisible to end users",
+                "Formulated plan for modernizing the legacy codebase for easier future maintenance",
+                "Utilized CircleCI and Github Releases to automate the build and deploy process"
+            ],
+            "keywords": [
+                "Electron",
+                "React",
+                "Javascript",
+                "CircleCI",
+                "MaterialUI",
+                "MUI"
+            ],
+            "startDate": "2022-01",
+            "endDate": "2022-06"
+        },
+        {
+            "name": "Auto Cart Builder",
+            "entity":"Custom Ink",
+            "description": "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for 20% increase in efficiency, a significant increase in our \"delivered error-free, on-time\" metrics, and near-elimination of facility-created \"rush\" orders.<br>The new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.<br>Impact: $440k annual production cost savings",
+            "highlights": [
+                "**Impact:** 20% increase in prioritization efficiency",
+                "**Impact:** $440k cost savings per year",
+                "Created complex algorithm to determine most efficient prioritization"
+            ],
+            "keywords": [
+                "Ruby",
+                "Rails",
+                "Automation"
+            ],
+            "startDate": "2022-12",
+            "endDate": "2023-07"
+        },
+        {
+            "name": "Shopify-Netsuite Integration",
+            "entity": "Rocket Code",
+            "description": "I built a fully unit-tested, custom, bi-directional, ETL integration layer to allow Shopify act as the store's online storefront.<br>This layer:<ul><li>Took orders from Shopify and sent them to Netsuite for fulfillment<li>Took Netsuite's fulfillment updates and sent them to Shopify for customer updates<li>Took inventory information from Netsuite and sent it to Shopify, transforming it to allow for the automatic creation of products, variants, and collections, and with the use of tags, populate collections such that the custom storefront displayed them as single products (necessary due to the number of variants for the products)<li>Synced gift card information between Shopify and Netsuite to enable customers to use their brick-and-mortar store-created gift cards on the website</ul>",
+            "highlights": [
+                "Created robust, bidirectional ETL",
+                "Responsible for planning, architecture, and implementation",
+                "Created gift card conversion system"
+            ],
+            "keywords": [
+                "PHP",
+                "PHPUnit",
+                "Laravel",
+                "Shopify API",
+                "ETL"
+            ],
+            "startDate": "2017-01",
+            "endDate": "2017-05"
+        }
+    ],
+    "skills": [
+        {
+            "name": "C++",
+            "level": "Functional",
+            "keywords": [
+                "Make",
+                "Ninja",
+                "Clang"
+            ]
+        },
+        {
+            "name": "PHP",
+            "level": "Master",
+            "keywords": [
+                "Laravel",
+                "7.1",
+                "5.3"
+            ]
+        },
+        {
+            "name": "Ruby",
+            "level": "Advanced",
+            "keywords": [
+                "Rails"
+            ]
+        },
+        {
+            "name": "Javascript",
+            "level": "Master",
+            "keywords": [
+                "React",
+                "Vue",
+                "Electron",
+                "NodeJS",
+                "Webpack"
+            ]
+        },
+        {
+            "name": "Python",
+            "level": "Advanced"
+        },
+        {
+            "name": "CSS",
+            "level": "Master",
+            "keywords": [
+                "Less",
+                "SASS"
+            ]
+        },
+        {
+            "name": "Database",
+            "level": "Master",
+            "keywords": [
+                "SQL",
+                "Data Modeling",
+                "Database Design",
+                "MySQL",
+                "MariaDB",
+                "Redis"
+            ]
+        },
+        {
+            "name": "Test Driven Development",
+            "level": "Master",
+            "keywords": [
+                "Jest",
+                "PHPUnit",
+                "Rspec",
+                "Minitest",
+                "Pytest"
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "level": "Advanced",
+            "keywords": [
+                "CircleCI",
+                "Travis CI",
+                "Github Actions"
+            ]
+        },
+        {
+            "name": "Operating Systems",
+            "level": "Master",
+            "keywords": [
+                "Linux",
+                "Mac",
+                "Windows"
+            ]
+        },
+        {
+            "name": "Containers",
+            "level": "Advanced",
+            "keywords": [
+                "Docker",
+                "Dev Containers",
+                "Kubernetes",
+                "Infrastructure as Code"
+            ]
+        }
+    ]
+}
