@@ -16,7 +16,7 @@
                         <li v-for="(t, i) in pub.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
                     </ul>
                 </section>
-                <section v-html="toMarkdown(pub.summary)">
+                <section v-html="fromMarkdown(pub.summary)">
                 </section>
             </article>
         </section>
@@ -29,7 +29,7 @@ import { useIcons } from '../../mixins/icons';
 import { useMarkdown } from '../../mixins/markdown';
 
 const { getTechClass } = useIcons();
-const { toMarkdown } = useMarkdown();
+const { fromMarkdown } = useMarkdown();
 
 const props = defineProps(['publications']);
 

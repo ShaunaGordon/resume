@@ -1,9 +1,13 @@
 import { marked } from 'marked';
 
 export const useMarkdown = () => {
-    const toMarkdown = (input) => {
+    const fromMarkdown = (input) => {
         return marked(input);
     };
 
-    return { toMarkdown };
+    const fromInlineMarkdown = (input) => {
+        return marked.parseInline(input);
+    };
+
+    return { fromMarkdown, fromInlineMarkdown };
 };

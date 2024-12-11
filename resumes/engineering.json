@@ -14,11 +14,18 @@
         {
             "name": "Deployment Notification Automation Initiative",
             "entity":"Custom Ink",
-            "description": "As a side-effect of the facility slowdown situation, there was an appetite for better deployment notifications. However, the interim solution that had been implemented was very manual and cumbersome. I collaborated with several engineering managers of other teams to come up with and orchestrate the implementation of an automated notification system.<br>As part of a long-term, cross-team initiative, we came up with a plan to use Github pull requests to provide the content and the trigger of a notification that would describe in plain language what the change was doing and why, the level of risk for the deploy, and link to supplemental outputs of the development process (including the issue tracking item, project pitches, architectural decision records, Slack discussions, and anything else relevant). The automated system was then intended to take the pull request contents, display a portion of it on a unified dashboard, with a link to the full pull request for technical stakeholders, and send an email out to those who wanted it.<br>As of the time of my departure, we had taken several steps to bringing the pull requests into alignment with this vision, including working out with a broader collection of engineers a \"bring your own process\" for assessing the risk of a change while using the same output chart to serve as a common \"language\" to stakeholders, and were evaluating our existing tools and past projects to see what existing work we could leverage in this new vision.",
-            "highlights": [],
+            "description": "As a side-effect of a facility slowdown situation, there was an appetite for better deployment notifications. However, the interim solution that had been implemented was very manual and cumbersome. So, I collaborated with several engineering managers of other teams to come up with and orchestrate the implementation of an automated notification system.\n\nAs part of a long-term, cross-team initiative, we came up with a plan to use Github pull requests to provide the content and the trigger of a notification that would describe in plain language what the change was doing and why, the level of risk for the deploy, and link to supplemental outputs of the development process (including the issue tracking item, project pitches, architectural decision records, Slack discussions, and anything else relevant). The automated system was then intended to take the pull request contents, display a portion of it on a unified dashboard, with a link to the full pull request for technical stakeholders, and send an email out to those who wanted it.\n\nAs of the time of my departure, we had taken several steps to bringing the pull requests into alignment with this vision, including working out with a broader collection of engineers a \"bring your own process\" for assessing the risk of a change while using the same output chart to serve as a common \"language\" to stakeholders, and were evaluating our existing tools and past projects to see what existing work we could leverage in this new vision.",
+            "highlights": [
+                "Created a new method for teams to communicate the risk of deploying a given pull request",
+                "Created a way for teams to determine their own criteria, while still distilling it down to a final set of values common across teams",
+                "Designed a system to automate nearly all steps in a manual and error-prone process",
+                "Created a pull request template to provide information to both technical and non-technical stakeholders about the changes made in the pull request"
+            ],
             "keywords": [
                 "Cross-team Problem Solving",
-                "Multi-system Architecture"
+                "Multi-system Architecture",
+                "Process Improvement",
+                "Process Automation"
             ],
             "startDate": "2023-08",
             "endDate": "2023-12"
@@ -26,8 +33,9 @@
         {
             "name": "Electron Application Shipping Tool Feature",
             "entity": "Custom Ink",
-            "description": "I implemented the new shipping interface, allowing the production team to use the Electron application from start to finish for every task, where previously, they needed to switch tools for some tasks. During this implementation, I brought large portions of the codebase up to modern standards, converting the React class-based components to function-based components, and integrating React Router and our in-house component library. I also began the process of reorganizing the file structure to modern standards to allow for better maintainability as the application grew in complexity.<br><strong>Impact:</strong> $210k annual production cost savings + untracked engineer maintenance cost savings",
+            "description": "I implemented the new shipping interface, allowing the production team to use the Electron application from start to finish for every task, where previously, they needed to switch tools for some tasks. During this implementation, I brought large portions of the codebase up to modern standards, converting the React class-based components to function-based components, and integrating React Router and our in-house component library. I also began the process of reorganizing the file structure to modern standards to allow for better maintainability as the application grew in complexity.",
             "highlights": [
+                "**Impact:** $210k annual production cost savings + untracked engineer maintenance cost savings",
                 "Began enacting previously-created plan to modernize codebase",
                 "Converted many components from class-based to function-based",
                 "Retrofitted with React Router and in-house component library"
@@ -66,8 +74,8 @@
             "entity":"Custom Ink",
             "description": "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for 20% increase in efficiency, a significant increase in our \"delivered error-free, on-time\" metrics, and near-elimination of facility-created \"rush\" orders.<br>The new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.<br>Impact: $440k annual production cost savings",
             "highlights": [
-                "20% increase in prioritization efficiency",
-                "$440k cost savings per year",
+                "**Impact:** 20% increase in prioritization efficiency",
+                "**Impact:** $440k cost savings per year",
                 "Created complex algorithm to determine most efficient prioritization"
             ],
             "keywords": [
