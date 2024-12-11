@@ -2,11 +2,11 @@
     "comment": "Job history. Shouldn't change, but keeping in its own to avoid importing unnecessarily if it does.",
     "work": [
         {
-            "name": "Genome Studios",
-            "position": "Principal Software Engineer",
+            "entity": "Genome Studios",
+            "name": "Principal Software Engineer",
             "url": "https://genomestudios.ca/",
             "startDate": "2024-01",
-            "summary": "Helped establish a small development studio in the gaming industry by working closely with studio founder to architect and implement technical projects, including games, supplemental engine utilities, engine features and bug fixes, and others. Worked with the Open 3D Engine (O3DE) community to submit contributions back to the project.",
+            "description": "Helped establish a small development studio in the gaming industry by working closely with studio founder to architect and implement technical projects, including games, supplemental engine utilities, engine features and bug fixes, and others. Worked with the Open 3D Engine (O3DE) community to submit contributions back to the project.",
             "highlights": [
                 "Provided guidance on organization and engineering direction",
                 "Contributed to Open 3D Engine (O3DE) open source project on behalf of the company",
@@ -31,12 +31,12 @@
             }
         },
         {
-            "name": "Custom Ink",
-            "position": "Senior Software Engineer",
+            "entity": "Custom Ink",
+            "name": "Senior Software Engineer",
             "url": "https://www.customink.com",
             "startDate": "2021-12",
             "endDate": "2023-12",
-            "summary": "Developed and maintained custom software to support the in-house printing facilities (IHP). Worked closely with management and user stakeholders to build software that met users' needs and made their work more efficient, while interfacing with the hardware used in the screenprinting and direct-to-garment (DTG, digital) printing process.",
+            "description": "Developed and maintained custom software to support the in-house printing facilities (IHP). Worked closely with management and user stakeholders to build software that met users' needs and made their work more efficient, while interfacing with the hardware used in the screenprinting and direct-to-garment (DTG, digital) printing process.",
             "highlights": [
                 "Implemented changes with an impact of $650k in annual savings",
                 "Took ownership of software fundamental to the DTG process",
@@ -56,12 +56,12 @@
             }
         },
         {
-            "name": "Proof Group",
-            "position": "Affiliate Software Engineer",
+            "entity": "Proof Group",
+            "name": "Affiliate Software Engineer",
             "url": "https://www.proofgeist.com",
             "startDate": "2018-11",
             "endDate": "2021-11",
-            "summary": "Helped manage the custom Python/Django portions of client's FileMaker-backed web application.Create a component library system that took React, Vue, or Svelt components and created self-contained Web Components for both general web use and use inside FileMaker.",
+            "description": "Helped manage the custom Python/Django portions of client's FileMaker-backed web application.Create a component library system that took React, Vue, or Svelt components and created self-contained Web Components for both general web use and use inside FileMaker.",
             "highlights": [
                 "Researched and developed a component library and build tool that could take Vue, React, or Svelt components and output self-contained, vanilla Web Components that could be used either in standard web applications, or within FileMaker's environment (which required additional processing to make all of the component's dependencies self-contained)."
             ],
@@ -73,11 +73,11 @@
             }
         },
         {
-            "name": "Rocket Code",
-            "position": "Senior Backend Engineer",
+            "entity": "Rocket Code",
+            "name": "Senior Backend Engineer",
             "startDate": "2016-10",
             "endDate": "2018-02",
-            "summary": "Develop custom integrations between Shopify and other platforms using PHP. Work with front end developers to ensure proper data and data shape for front end work. Develop custom tools with PHP, Laravel, and VueJS that included Shopify integrations. Create and maintain Ruby Shopify checkout and cart scripts.",
+            "description": "Develop custom integrations between Shopify and other platforms using PHP. Work with front end developers to ensure proper data and data shape for front end work. Develop custom tools with PHP, Laravel, and VueJS that included Shopify integrations. Create and maintain Ruby Shopify checkout and cart scripts.",
             "highlights": [
                 "Worked closely with Front-End Engineers to expand Shopify's capabilities",
                 "Built custom API-based integrations between platforms",
@@ -102,11 +102,11 @@
             }
         },
         {
-            "name": "Core-Apps",
-            "position": "Engineer, GoExpo Division",
+            "entity": "Core-Apps",
+            "name": "Engineer, GoExpo Division",
             "startDate": "2014",
             "endDate": "2015",
-            "summary": "",
+            "description": "",
             "tech": {
                 "php": "PHP",
                 "laravel": "Laravel",

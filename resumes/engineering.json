@@ -7,8 +7,12 @@
         "components/volunteer.json"
     ],
     "meta": {
-        "version": "2.0",
-        "lastModified": "2024-08-30"
+        "version": "2.1",
+        "lastModified": "2024-12-10"
+    },
+    "basics": {
+        "label": "And I make things",
+        "summary": "I'm a problem-solver by nature and by profession. I have a natural drive to find solutions to problems spoken and unspoken. By digging down through pain points, I excel in finding the heart of issues and coming up with the best solution within the constraints of the environment.\n\nWhile I've historically specialized in PHP, I always enjoy learning new things, and have recently been neck-deep in React and Electron while at a Ruby on Rails shop, and had a lot of fun dabbling in Rust and Tauri. I've also been eyeing software architecture and program management as potential roles to grow into."
     },
     "projects": [
         {
@@ -72,7 +76,7 @@
         {
             "name": "Auto Cart Builder",
             "entity":"Custom Ink",
-            "description": "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for 20% increase in efficiency, a significant increase in our \"delivered error-free, on-time\" metrics, and near-elimination of facility-created \"rush\" orders.<br>The new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.<br>Impact: $440k annual production cost savings",
+            "description": "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for 20% increase in efficiency, a significant increase in our \"delivered error-free, on-time\" metrics, and near-elimination of facility-created \"rush\" orders.<br>The new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.\n\nImpact: $440k annual production cost savings",
             "highlights": [
                 "**Impact:** 20% increase in prioritization efficiency",
                 "**Impact:** $440k cost savings per year",
@@ -89,7 +93,7 @@
         {
             "name": "Shopify-Netsuite Integration",
             "entity": "Rocket Code",
-            "description": "I built a fully unit-tested, custom, bi-directional, ETL integration layer to allow Shopify act as the store's online storefront.<br>This layer:<ul><li>Took orders from Shopify and sent them to Netsuite for fulfillment<li>Took Netsuite's fulfillment updates and sent them to Shopify for customer updates<li>Took inventory information from Netsuite and sent it to Shopify, transforming it to allow for the automatic creation of products, variants, and collections, and with the use of tags, populate collections such that the custom storefront displayed them as single products (necessary due to the number of variants for the products)<li>Synced gift card information between Shopify and Netsuite to enable customers to use their brick-and-mortar store-created gift cards on the website</ul>",
+            "description": "I built a fully unit-tested, custom, bi-directional, ETL integration layer to allow Shopify act as the store's online storefront.\n\nThis layer:<ul><li>Took orders from Shopify and sent them to Netsuite for fulfillment<li>Took Netsuite's fulfillment updates and sent them to Shopify for customer updates<li>Took inventory information from Netsuite and sent it to Shopify, transforming it to allow for the automatic creation of products, variants, and collections, and with the use of tags, populate collections such that the custom storefront displayed them as single products (necessary due to the number of variants for the products)<li>Synced gift card information between Shopify and Netsuite to enable customers to use their brick-and-mortar store-created gift cards on the website</ul>",
             "highlights": [
                 "Created robust, bidirectional ETL",
                 "Responsible for planning, architecture, and implementation",
