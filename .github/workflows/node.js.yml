@@ -31,7 +31,7 @@ jobs:
      # uses: mskelton/setup-yarn@b0673acb4e37f20265fbddbf7567110ebb313605
       uses: mskelton/setup-yarn@v3
     - name: Build
-      run: yarn build
+      run: yarn build-only
     - run: cp CNAME ./dist/CNAME
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
