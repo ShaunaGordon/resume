@@ -24,7 +24,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 import { useIcons } from '../../mixins/icons';
 import { useMarkdown } from '../../mixins/markdown';
 

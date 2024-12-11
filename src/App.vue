@@ -2,9 +2,9 @@
     <header-section v-if="resume.basics" :basics="resume.basics" :meta="resume.meta"></header-section>
     <intro-section v-if="resume.basics" :data="resume.basics"></intro-section>
 
-    <projects-section v-if="resume.projects" :projects="resume.projects"></projects-section>
-
     <work-section v-if="resume.work" :work="resume.work" :basics="resume.basics"></work-section>
+
+    <projects-section v-if="resume.projects" :projects="resume.projects"></projects-section>
 
     <publications-section v-if="resume.publications" :publications="resume.publications"></publications-section>
 </template>

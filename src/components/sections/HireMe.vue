@@ -70,7 +70,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .cardholder {
         grid-auto-flow: row dense;
         h3 {

@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 import { useMarkdown } from '../../mixins/markdown';
 
 const { fromMarkdown } = useMarkdown();

@@ -1,5 +1,5 @@
 :root {
-  interpolate-size: allow-keywords;
+  interpolate-size: allow-keywords; /* Allow transition to/from "auto" */
 }
 
 body {
@@ -67,19 +67,20 @@ a {
 }
 
 details {
-  height: 1rem;
+  height: 1.2rem;
+  padding: .5rem auto;
 
   summary {
     cursor: pointer;
   }
 
   /* @media screen and (prefers-reduced-animation: no-preference) { */
-    transition: all 1s;
+  transition: all 1s;
 
-    &[open] {
-      height: auto;
-      overflow: clip; /* Clip off contents while animating */
-    }
+  &[open] {
+    height: auto;
+    overflow: clip; /* Clip off contents while animating */
+  }
   /* } */
 
 
@@ -114,6 +115,22 @@ details {
   h4 {
     margin: 0;
     opacity: .6;
+  }
+
+  &:not(.old) {
+    & + .old { /* Target the first .old card */
+      grid-column-start: 1;
+      position: relative;
+
+      &::before {
+        content: "Work Archive";
+        position: absolute;
+        top: -.75rem;
+        left: -.5rem;
+        font-size: 1.25rem;
+        opacity: .5;
+      }
+    }
   }
 }
 

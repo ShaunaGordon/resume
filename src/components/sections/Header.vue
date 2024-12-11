@@ -18,7 +18,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 import { useIcons } from '../../mixins/icons';
 
 const { getFaBrandClass, getFaClass } = useIcons();
