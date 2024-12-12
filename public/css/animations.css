@@ -1,0 +1,26 @@
+:root {
+    interpolate-size: allow-keywords; /* Allow transition to/from "auto" */
+}
+
+:root, .card {
+    transition: color 5s, background-color 5s;
+}
+
+a {
+    transition: all 1s;
+}
+
+details {
+    transition: all 1s;
+
+    &[open] {
+        height: auto;
+        overflow: clip; /* Clip off contents while animating */
+    }
+}
+
+.highlights {
+    li {
+        transition: background 1.5s;
+    }
+}

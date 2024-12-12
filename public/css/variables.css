@@ -1,0 +1,32 @@
+:root {
+    --color-primary: #f0f0ec;
+    --color-primary-light: #fcfbf8;
+    --color-secondary: #333f4c;
+    --color-accent-primary: #495c55;
+    --color-accent-light: #4a5a56;
+    --color-accent-secondary: #754668;
+    --color-background-highlight: color-mix(in srgb, var(--color-accent-primary), transparent 94%);
+
+    --font-body: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    --font-header: 'Forum', Helvetica, Arial, sans-serif;
+
+    --box-shadow: 3px 3px 5px 0 rgba(0,0,0,.08);
+
+    --gutter-normal: 1rem;
+    --gutter-narrow: calc(var(--gutter-normal) / 2);
+    --gutter-mid-wide: calc(var(--gutter-normal) * 1.5);
+    --gutter-wide: calc(var(--gutter-normal) * 2);
+    --gutter-ultra-wide: calc(var(--gutter-normal) * 3);
+
+    @media (prefers-color-scheme: dark) {
+      --color-primary: #111318;
+      --color-primary-light: #080b13;
+      --color-secondary: #c0b0a0;
+      --color-accent-primary: #7ea388;
+      --color-accent-light: #aa939e;
+      --color-accent-secondary: #a5969d;
+      --color-background-highlight: color-mix(in srgb, var(--color-accent-light), transparent 90%);
+
+      --box-shadow: 2px 2px 8px 0 rgba(255,255,255,.05);
+    }
+}
