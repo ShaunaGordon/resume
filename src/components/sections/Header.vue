@@ -2,7 +2,7 @@
   <section id="top">
       <header>
           <img class="avatar" :src="basics?.image" />
-          <h1 :title="meta?.additionalData?.pronouns.join('/')">I'm {{  basics?.name }}</h1>
+          <h1 :title="basics?.pronouns.join('/')">I'm {{  basics?.name }}</h1>
           <h2>{{ basics?.label }}</h2>
       </header>
       <nav>
@@ -22,7 +22,7 @@ import { useIcons } from '../../mixins/icons';
 
 const { getFaBrandClass, getFaClass } = useIcons();
 
-const { basics, meta } = defineProps(['basics', 'meta']);
+const { basics } = defineProps(['basics']);
 
 const networks = {
     blog: {

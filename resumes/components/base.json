@@ -1,23 +1,38 @@
 {
     "comment": "Base info that doesn't change, regardless of job or field.",
-    "meta": {
-        "additionalData": {
-            "pronouns": [
-                "she",
-                "her"
-            ]
-        }
-    },
     "basics": {
         "name": "Shauna Gordon",
-        "image": "https://resume.shaunagordon.com/img/avatar.png",
+        "pronouns": [
+            "she",
+            "her"
+        ],
+        "image": "img/avatar.png",
         "email": "shauna@gordons.me",
         "url": "https://shaunagordon.com",
         "location": {
             "city": "Columbus",
             "countryCode": "US",
-            "region": "Ohio"
+            "region": "Ohio",
+            "relocate": {
+                "exclusive": true,
+                "assistance": "Relocation assistance appreciated, but not required.",
+                "to": [
+                    {
+                        "name": "New Zealand",
+                        "info": "Green List, Tier 1, looking for Straight to Residence Visa and need accredited company offer. Prefer Wellington or Auckland, but will consider others."
+                    },
+                    {
+                        "name": "Edmonton or Calgary, AB, Canada",
+                        "info": "Currently ~430 points toward Express Entry, before job offer. Relocation assistance appreciated, but not required."
+                    },
+                    {
+                        "name": "Netherlands",
+                        "info": "Visa sponsoring job offer needed. Willing to learn Dutch."
+                    }
+                ]
+            }
         },
+        "looking": "w2",
         "profiles": [
             {
                 "network": "Blog",
@@ -42,6 +57,14 @@
                 "network": "Slide Decks",
                 "url": "https://talks.shaunagordon.com"
             }
+        ],
+        "values": [
+            "Clarity Through Candor",
+            "Evolution Through Insight",
+            "Growth Through Spirit",
+            "Integrity Through Action",
+            "Impact Through Honor",
+            "Wellness Through Balance"
         ]
     },
     "languages": [
