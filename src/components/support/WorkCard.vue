@@ -7,6 +7,7 @@
                 {{ item.startDate }} - {{ item.endDate || 'Current' }}
             </h4>
             <a v-if="item.source" :href="item.source" target="_blank"><i :class="getTechClass('git')"></i> <span>Source Code</span></a>
+            <div v-if="item.volunteer" class="volunteer">Volunteering!</div>
         </header>
         <WorkCardBody v-if="isCurrent(item.endDate)" :item="item" />
         <details v-else>

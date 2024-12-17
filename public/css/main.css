@@ -57,9 +57,10 @@ header {
 }
 
 a {
-  text-decoration: none;
   color: var(--color-accent-primary);
   font-weight: bold;
+  text-decoration: dotted underline;
+  text-underline-offset: var(--gutter-narrow);
 
   &:hover {
     color: var(--color-accent-secondary);
@@ -92,6 +93,7 @@ details {
   box-shadow: var(--box-shadow);
   padding: var(--gutter-normal) var(--gutter-mid-wide);
   border-radius: 3px;
+  position: relative;
 
   header {
     text-align: left;
@@ -109,7 +111,6 @@ details {
   &:not(.old) {
     & + .old { /* Target the first .old card */
       grid-column-start: 1;
-      position: relative;
 
       &::before {
         content: "Work Archive";
@@ -117,9 +118,18 @@ details {
         top: -.75rem;
         left: -.5rem;
         font-size: 1.5rem;
-        opacity: .5;
+        /* opacity: .7; */
+        color: var(--color-accent-primary);
       }
     }
+  }
+
+  .volunteer {
+    position: absolute;
+    top: var(--gutter-normal);
+    right: var(--gutter-wide);
+    font-size: 1.5rem;
+    color: var(--color-accent-primary);
   }
 }
 
