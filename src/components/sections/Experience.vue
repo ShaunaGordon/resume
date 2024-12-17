@@ -16,9 +16,6 @@
 <script setup>
 import WorkCard from '../support/WorkCard.vue';
 
-import { useDateUtils } from '../../mixins/dateUtils';
-const { isCurrent } = useDateUtils();
-
 import { useProfiles } from '../../mixins/profiles';
 const { getProfile } = useProfiles();
 

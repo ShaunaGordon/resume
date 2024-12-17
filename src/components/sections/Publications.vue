@@ -9,7 +9,7 @@
             <article v-for="(pub, i) in publications" class="card" :key="i">
                 <header>
                     <h3>{{ pub.name }}</h3>
-                    <a :href="pub.url" target="_blank"><h4>{{ pub.publisher }} - {{ pub.releaseDate }}</h4></a>
+                    <a :href="pub.url" target="_blank"><h4>{{ pub.publisher }} - <time :datetime="pub.releaseDate">{{ pub.releaseDate }}</time></h4></a>
                 </header>
                 <section v-if="pub.tech">
                     <ul class="tech">
