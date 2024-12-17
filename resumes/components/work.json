@@ -2,6 +2,26 @@
     "comment": "Job history. Shouldn't change, but keeping in its own to avoid importing unnecessarily if it does.",
     "work": [
         {
+            "entity": "Open 3D Engine",
+            "name": "SIG-Docs Co-Chair",
+            "volunteer": true,
+            "url": "https://o3de.org",
+            "startDate": "2024-04",
+            "description": "Led the expansion of the Documentation and Community Special Interest Group (SIG-Docs) for the Open 3D Engine (O3DE) open source project and foundation by organizing and leading SIG meetings, maintaining the SIG roadmap for maintenance and improvement of the documentation and the website on which it's hosted. Brought and kept the underlying site and tooling up to date, to avoid issues with deprecated and obsolete parts, and streamlined the repository to encourage content contributors. Led releases in sync with O3DE to ensure up-to-date documentation with the engine.",
+            "highlights": [
+                "Brought SIG-Docs back to active status after more than a year of dormancy",
+                "Upgraded underlying Hugo static site generator and build pipeline",
+                "Split API docs and Hugo theme from main docs repository to encourage content contributors and streamline all contributions",
+                "Managed concerted efforts for core architectural improvements"
+            ],
+            "tech": {
+                "hugo": "Hugo",
+                "netlify": "Netlify",
+                "github": "GitHub/GitHub Actions",
+                "bash": "Shell Scripting"
+            }
+        },
+        {
             "entity": "Genome Studios",
             "name": "Principal Software Engineer",
             "url": "https://genomestudios.ca/",
@@ -17,7 +37,7 @@
             "tech": {
                 "cplusplus": "C++",
                 "bitbucket": "Bitbucket",
-                "github": "GitHub",
+                "github": "GitHub/GitHub Actions",
                 "confluence": "Confluence",
                 "hugo": "Hugo",
                 "linux": "Linux",
