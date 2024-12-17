@@ -2,7 +2,7 @@
     "comment": "Things published in other people's publications. Might not change, but might be added to.",
     "publications": [
         {
-            "name": "From Git To Github - An Introduction to Version-Controlled and Collaborative Development",
+            "name": "From Git To Github - An Introduction to Version-Controlled, Collaborative Development",
             "url": "https://talks.shaunagordon.com/git-to-github",
             "releaseDate": "2021-02",
             "publisher": "Women In Analytics",

@@ -101,6 +101,7 @@ details {
 
   h3 {
     margin-bottom: var(--gutter-narrow);
+    letter-spacing: 1px;
   }
 
   h4 {
