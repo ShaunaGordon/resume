@@ -1,5 +1,5 @@
 <template>
-    <section id="hire-me">
+    <section id="hire-me" class="no-print">
         <header>
             <h2>Let's Work Together!</h2>
             <p v-if="basics.looking == 'w2'">

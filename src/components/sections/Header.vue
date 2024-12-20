@@ -1,15 +1,15 @@
 <template>
   <section id="top">
       <header>
-          <img class="avatar" :src="basics?.image" />
-          <h1 :title="basics?.pronouns.join('/')">I'm {{  basics?.name }}</h1>
-          <h2>{{ basics?.label }}</h2>
+          <img class="avatar no-print" :src="basics?.image" />
+          <h1 :title="basics?.pronouns.join('/')"><span class="no-print">I'm </span>{{  basics?.name }}</h1>
+          <h2 clsaa="no-print">{{ basics?.label }}</h2>
       </header>
       <nav>
           <ul>
               <li v-for="(item, i) in basics?.profiles" :key="i">
                   <a :href="item.url" target="_blank">
-                      <i :class="networks[item.network.toLowerCase()].brand ? getFaBrandClass(networks[item.network.toLowerCase()].icon) : getFaClass(networks[item.network.toLowerCase()].icon)"></i> {{ item.network }}
+                      <i :class="networks[item.network.toLowerCase()].brand ? getFaBrandClass(networks[item.network.toLowerCase()].icon) : getFaClass(networks[item.network.toLowerCase()].icon)"></i> <span class="no-print">{{ item.network }}</span>
                   </a>
               </li>
           </ul>
