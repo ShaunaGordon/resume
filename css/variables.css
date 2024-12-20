@@ -18,7 +18,7 @@
     --gutter-wide: calc(var(--gutter-normal) * 2);
     --gutter-ultra-wide: calc(var(--gutter-normal) * 3);
 
-    @media (prefers-color-scheme: dark) {
+    @media screen and (prefers-color-scheme: dark) {
       --color-primary: #111318;
       --color-primary-light: #080b13;
       --color-secondary: #c0b0a0;
@@ -28,5 +28,16 @@
       --color-background-highlight: color-mix(in srgb, var(--color-accent-light), transparent 90%);
 
       --box-shadow: 2px 2px 8px 0 rgba(255,255,255,.05);
+    }
+
+    @media print {
+      --color-primary: #ffffff;
+      --color-primary-light: var(--color-primary);
+      --color-secondary: #333333;
+      --color-accent-primary: #495c55;
+      --color-accent-light: #4a5a56;
+      --color-accent-secondary: #754668;
+
+      --box-shadow: 0;
     }
 }

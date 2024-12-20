@@ -1,0 +1,50 @@
+@import url('./variables.css');
+
+.no-print, .old {
+    display: none;
+}
+
+.print-only {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+
+    &::after {
+        content:": " attr(href);
+    }
+}
+
+header {
+    & > p {
+        display: none;
+    }
+}
+
+details {
+    height: fit-content;
+
+    &::details-content {
+        display: contents;
+    }
+
+    summary {
+        display: none;
+    }
+}
+
+#top {
+    nav {
+        max-width: 45rem;
+
+        ul {
+            display: block;
+            padding-left: 0;
+
+            li {
+                text-align: left;
+            }
+        }
+    }
+}

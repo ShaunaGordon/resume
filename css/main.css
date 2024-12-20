@@ -169,3 +169,7 @@ details {
   margin: 3rem 4rem 5rem 4rem;
   font-size: 18px;
 }
+
+.print-only {
+  display: none;
+}
