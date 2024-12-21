@@ -9,18 +9,18 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: var(--font-size-h1);
   margin-top: var(--gutter-normal);
   margin-bottom: var(--gutter-narrow);
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: var(--font-size-h2);
   margin-top: var(--gutter-wide);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: var(--font-size-h3);
   margin-top: var(--gutter-normal);
   margin-bottom: var(--gutter-normal);
 }
