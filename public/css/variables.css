@@ -10,6 +10,10 @@
     --font-body: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     --font-header: 'Forum', Helvetica, Arial, sans-serif;
 
+    --font-size-h1: 6rem;
+    --font-size-h2: 4rem;
+    --font-size-h3: 2rem;
+
     --box-shadow: 3px 3px 5px 0 rgba(0,0,0,.08);
 
     --gutter-normal: 1rem;
@@ -39,5 +43,9 @@
       --color-accent-secondary: #754668;
 
       --box-shadow: 0;
+
+      --font-size-h1: 4rem;
+      --font-size-h2: 2rem;
+      --font-size-h3: 1.2rem;
     }
 }
