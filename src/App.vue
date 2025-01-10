@@ -6,11 +6,11 @@
 
     <projects-section v-if="resume.projects" :projects="resume.projects"></projects-section>
 
-    <publications-section v-if="resume.publications" :publications="resume.publications" class="no-print"></publications-section>
+    <publications-section v-if="resume.publications" :publications="resume.publications"></publications-section>
 
     <education-section v-if="resume.education" :schools="resume.education"></education-section>
 
-    <hire-me v-if="resume.basics" :basics="resume.basics" class="no-print"></hire-me>
+    <hire-me v-if="resume.basics" :basics="resume.basics"></hire-me>
 </template>
 
 <script setup>

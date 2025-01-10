@@ -5,7 +5,7 @@
             </li>
         </ul>
     </section>
-    <section v-if="item.tech" class="no-print">
+    <section v-if="item.tech">
         <ul class="tech">
             <li v-for="(t, i) in item.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
         </ul>
