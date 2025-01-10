@@ -8,6 +8,7 @@
         ],
         "image": "img/avatar.png",
         "email": "shauna@gordons.me",
+        "phone": "+1 614-578-7244",
         "url": "https://shaunagordon.com",
         "location": {
             "city": "Columbus",
@@ -23,7 +24,7 @@
                     },
                     {
                         "name": "Edmonton or Calgary, AB, Canada",
-                        "info": "Currently ~430 points toward Express Entry, before job offer. Relocation assistance appreciated, but not required."
+                        "info": "Currently ~430 points toward Express Entry, before job offer."
                     },
                     {
                         "name": "Netherlands",
@@ -50,7 +51,7 @@
             },
             {
                 "network": "LinkedIn",
-                "url": "https://www.linkedin.com/in/gordondev/",
+                "url": "https://www.linkedin.com/in/gordondev",
                 "username": "gordondev"
             },
             {
@@ -78,7 +79,8 @@
             "institution": "Keller Graduate School of Management",
             "area": "Information Systems Management",
             "studyType": "Master",
-            "endDate": "2012"
+            "endDate": "2012",
+            "honors": "with Distinction"
         },
         {
             "institution": "DeVry University",

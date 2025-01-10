@@ -1,26 +1,48 @@
+/*
+  Putting the animations into their own file allows us to stick the media
+  query on the import, itself. This allows people who have set their system
+  to reduced motion to not even have to fetch it. I keep animations pretty
+  minimal and subtle, anyway, so there's not much here, but this is a
+  particularly useful technique for more animation-heavy sites.
+*/
 :root {
-    interpolate-size: allow-keywords; /* Allow transition to/from "auto" */
+  interpolate-size: allow-keywords; /* Allow transition to/from "auto" */
 }
 
 :root, .card {
-    transition: color 5s, background-color 5s;
+  /*
+    This is just a little Easter egg kind of thing, since there's no manual switch,
+    but this transitions the colors when switching between light and dark mode. If
+    nothing else, it's for my own eyes, since I find an animated transition less
+    jarring in this kind of scenario. The slow speed allows it to adjust without
+    causing a sort of "flash" as the contrast inverts.
+  */
+  transition: color 5s, background-color 5s;
 }
 
 a {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 details {
-    transition: all 1s;
+  transition: all 1s;
 
-    &[open] {
-        height: auto;
-        overflow: clip; /* Clip off contents while animating */
-    }
+  /*
+    This, combined with interpolate-size, allows us to animate the opening
+    of the details element's details block. Closing still doesn't animate using
+    this technique, which is a bummer, but it's because of a quirk with the details
+    element implementation, itself. There's not much I can do about it without
+    resorting to JavaScript, which I didn't really want to do, because I wanted
+    to keep flavor animations in the CSS.
+  */
+  &[open] {
+    height: auto;
+    overflow: clip; /* Clip off contents while animating */
+  }
 }
 
 .highlights {
-    li {
-        transition: background 1.5s;
-    }
+  li {
+    transition: background 1.5s;
+  }
 }

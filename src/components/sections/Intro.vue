@@ -1,8 +1,8 @@
 <template>
     <section id="intro">
         <header>
-            <h2>About</h2>
-            <div v-if="data?.summary" v-html="fromMarkdown(data?.summary)"></div>
+            <h2 class="no-print">About</h2>
+            <div v-if="data?.intro" v-html="fromMarkdown(data?.summary)"></div>
         </header>
     </section>
 </template>

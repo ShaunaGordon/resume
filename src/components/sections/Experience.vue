@@ -1,8 +1,8 @@
 <template>
   <section id="experience">
     <header>
-      <h2>Experience</h2>
-      <p>This provides the most recent history. For a full employment history, <a :href="(getProfile('linkedin', basics.profiles)).url" target="_blank">see my LinkedIn profile</a>.</p>
+      <h2>Work Experience</h2>
+      <p class="no-print">This provides the most recent history. For a full employment history, <a :href="(getProfile('linkedin', basics.profiles)).url" target="_blank">see my LinkedIn profile</a>.</p>
     </header>
     <section class="cardholder">
         <WorkCard v-for="(job, i) in work" :item="job" :key="i" />

@@ -2,6 +2,7 @@
 
 :root {
   background-color: var(--color-primary);
+  font-size: var(--font-size-base);
 }
 
 body {
@@ -26,12 +27,12 @@ h3 {
 }
 
 nav {
-  padding-bottom: var(--gutter-mid-wide);
+  padding: 0 var(--gutter-ultra-wide) var(--gutter-mid-wide);
 
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, 10rem);
-    justify-content: space-between;
+    justify-content: space-around;
 
     li {
       list-style-type: none;
@@ -45,9 +46,7 @@ header {
   font-family: var(--font-header);
 
   p {
-    margin: 0 auto;
-    margin-bottom: var(--gutter-ultra-wide);
-    margin-top: calc(var(--gutter-mid-wide) * -1);
+    margin: calc(var(--gutter-mid-wide) * -1) auto var(--gutter-ultra-wide);
     max-width: 45rem;
     text-align: justify;
     font-family: var(--font-body);
@@ -68,7 +67,7 @@ a {
 }
 
 details {
-  height: 1.2rem;
+  height: 2.1rem;
   padding: var(--gutter-narrow) auto;
 
   summary {
@@ -85,6 +84,7 @@ details {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 35rem));
   grid-gap: var(--gutter-normal);
+  gap: var(--gutter-normal);
   justify-content: center;
 }
 
@@ -97,16 +97,19 @@ details {
 
   header {
     text-align: left;
+    margin-bottom: var(--gutter-narrow);
+
+    p {
+      /* font-size: var(--font-size-h4); */
+      padding-top: 0;
+      margin: 0;
+      opacity: .6;
+    }
   }
 
   h3 {
-    margin-bottom: var(--gutter-narrow);
     letter-spacing: 1px;
-  }
-
-  h4 {
-    margin: 0;
-    opacity: .6;
+    margin-bottom: 0;
   }
 
   &:not(.old) {
@@ -114,11 +117,18 @@ details {
       grid-column-start: 1;
 
       &::before {
+        /*
+          This is just a little accent mark to note to visual users that a position
+          or project is older. I wanted to display back several years, before dropping
+          things off entirely, but also give viewers the option to see details of the
+          older positions if they want. The content isn't really important, so it's
+          here, as a design element.
+        */
         content: "Work Archive";
         position: absolute;
         top: -.75rem;
         left: -.5rem;
-        font-size: 1.5rem;
+        font-size: var(--font-size-h4);
         /* opacity: .7; */
         color: var(--color-accent-primary);
       }
@@ -126,10 +136,14 @@ details {
   }
 
   .volunteer {
+    /*
+      The demarkation of volunteer positions *is* important, so it's actual
+      text, which is then positioned to highlight it for visual users.
+    */
     position: absolute;
     top: var(--gutter-normal);
     right: var(--gutter-wide);
-    font-size: 1.5rem;
+    font-size: var(--font-size-h4);
     color: var(--color-accent-primary);
   }
 }
@@ -166,8 +180,7 @@ details {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-secondary);
-  margin: 3rem 4rem 5rem 4rem;
-  font-size: 18px;
+  margin: var(--gutter-ultra-wide) var(--gutter-wide);
 }
 
 .print-only {

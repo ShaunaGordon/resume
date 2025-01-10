@@ -5,14 +5,14 @@
             </li>
         </ul>
     </section>
-    <section v-if="item.tech">
+    <section v-if="item.tech" class="no-print">
         <ul class="tech">
             <li v-for="(t, i) in item.tech" :key="i"><i :class="getTechClass(i)"></i> {{ t }}</li>
         </ul>
     </section>
     <section v-if="item.description">
         <details>
-            <summary v-if="item.summary" v-html="fromMarkdown(item.summary)"></summary>
+            <summary v-if="item.summary" v-html="fromInlineMarkdown(item.summary)"></summary>
             <summary v-else>More Information</summary>
             <div v-html="fromMarkdown(item.description)"></div>
         </details>

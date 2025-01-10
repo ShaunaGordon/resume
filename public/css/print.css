@@ -1,24 +1,28 @@
 @import url('./variables.css');
 
-.no-print, .old {
-    display: none;
+nav {
+    padding: 0;
 }
 
-.print-only {
-    display: block;
+h1, h2, h3 {
+    margin: 0;
+    margin-bottom: var(--gutter-narrow);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-
-    &::after {
-        content:": " attr(href);
+section {
+    header {
+        padding-top: var(--gutter-wide);
     }
 }
 
-header {
-    & > p {
-        display: none;
+a {
+    font-weight: normal;
+    text-decoration: none;
+
+    &::after {
+        content: attr(href);
     }
 }
 
@@ -34,17 +38,100 @@ details {
     }
 }
 
-#top {
-    nav {
-        max-width: 45rem;
+.cardholder {
+    display: block;
+}
 
+.card {
+    /* padding: var(--gutter-narrow) var(--gutter-normal); */
+    padding: 0;
+    break-inside: avoid-page;
+
+    h3 {
+        letter-spacing: 0px;
+    }
+
+    &:not(.old) {
+        & + .old { /* Target the first .old card */
+          grid-column-start: 1;
+
+          &::before {
+            content: "";
+          }
+        }
+    }
+
+    .volunteer {
+        position: static;
+        top: initial;
+        right: initial;
+    }
+}
+
+.highlights {
+    margin-left: var(--gutter-normal);
+    padding: 0;
+
+    li {
+        padding: 0;
+    }
+}
+
+.no-print {
+    display: none;
+}
+
+.print-only {
+    display: contents;
+}
+
+#top {
+    padding-bottom: var(--gutter-wide);
+    header {
+        display: block;
+    }
+
+    nav {
         ul {
-            display: block;
-            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 33%);
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0;
+            margin: 0;
 
             li {
-                text-align: left;
+                text-align: center;
+                /* border: 1px solid red; */
             }
         }
     }
+}
+
+#intro {
+    padding-bottom: var(--gutter-normal);
+    header {
+        p {
+            max-width: 100%;
+            opacity: 1;
+            margin: 0;
+            margin-bottom: var(--gutter-normal);
+        }
+    }
+}
+
+#projects {
+    .card {
+        &.old {
+            display: none;
+        }
+
+        details {
+            display: none;
+        }
+    }
+}
+
+#app {
+    margin: var(--gutter-normal);
 }

@@ -2,12 +2,11 @@
     <article :class="classes(isCurrent(item.endDate))">
         <header>
             <h3>{{ item.name }}</h3>
-            <h4 v-if="item.entity">{{ item.entity }}</h4>
-            <h4 v-if="item.startDate">
+            <p v-if="item.entity">{{ item.entity }}</p>
+            <p v-if="item.startDate">
                 <time :datetime="item.startDate">{{ item.startDate }}</time> - <span v-html="endDate"></span>
-            </h4>
+            </p>
             <a v-if="item.source" :href="item.source" target="_blank"><i :class="getTechClass('git')"></i> <span>Source Code</span></a>
-            <div v-if="item.volunteer" class="volunteer">Volunteering!</div>
         </header>
         <WorkCardBody v-if="isCurrent(item.endDate)" :item="item" />
         <details v-else>

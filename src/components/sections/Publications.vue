@@ -2,7 +2,7 @@
     <section id="publications">
         <header>
             <h2>Talks &amp; Publications</h2>
-            <p>I like to write about the things I do and share what I know and learn with others. Aside from my own blog, I occassionally have articles in other publications.</p>
+            <p class="no-print">I like to write about the things I do and share what I know and learn with others. Aside from my own blog, I occassionally have articles in other publications.</p>
             <p>Very occassionally, I also do a little public speaking. The slide decks are linked here, unless a video is available.</p>
         </header>
         <section class="cardholder">

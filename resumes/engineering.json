@@ -12,7 +12,8 @@
     },
     "basics": {
         "label": "And I make things",
-        "summary": "I'm a problem-solver by nature and by profession. I have a natural drive to find solutions to problems spoken and unspoken. By digging down through pain points, I excel in finding the heart of issues and coming up with the best solution within the constraints of the environment.\n\nWhile I've historically specialized in PHP, I always enjoy learning new things, and have recently been neck-deep in React and Electron while at a Ruby on Rails shop, and had a lot of fun dabbling in Rust and Tauri. I've also been eyeing software architecture and program management as potential roles to grow into."
+        "intro": "I'm a problem-solver by nature and by profession. I have a natural drive to find solutions to problems spoken and unspoken. By digging down through pain points, I excel in finding the heart of issues and coming up with the best solution within the constraints of the environment.\n\nWhile I've historically specialized in PHP, I always enjoy learning new things, and have recently been neck-deep in React and Electron while at a Ruby on Rails shop, and had a lot of fun dabbling in Rust and Tauri. I've also been eyeing software architecture and program management as potential roles to grow into.",
+        "summary": "Senior Software Engineer with 10+ years of experience specializing in full-stack development, system architecture, and technical leadership. Demonstrated expertise in Ruby, JavaScript, and PHP, with a proven track record of delivering high-impact solutions resulting in $650k+ annual savings through technical optimization. Strong background in flexible work environments, successfully leading teams and projects across various collaboration models. Accomplished in rapidly adapting to new technologies and environments while maintaining high-quality deliverables."
     },
     "projects": [
         {
@@ -35,46 +36,28 @@
             "endDate": "2023-12"
         },
         {
-            "name": "Electron Application Shipping Tool Feature",
+            "name": "Digital Print Workflow Platform",
             "entity": "Custom Ink",
             "description": "I implemented the new shipping interface, allowing the production team to use the Electron application from start to finish for every task, where previously, they needed to switch tools for some tasks. During this implementation, I brought large portions of the codebase up to modern standards, converting the React class-based components to function-based components, and integrating React Router and our in-house component library. I also began the process of reorganizing the file structure to modern standards to allow for better maintainability as the application grew in complexity.",
             "highlights": [
-                "**Impact:** $210k annual production cost savings + untracked engineer maintenance cost savings",
-                "Began enacting previously-created plan to modernize codebase",
-                "Converted many components from class-based to function-based",
-                "Retrofitted with React Router and in-house component library"
+                "Led distributed team development of Electron/React application",
+                "Implemented new shipping interface resulting in **$210k annual cost savings**",
+                "Modernized codebase to current React standards",
+                "Created automated release process using CircleCI and GitHub Releases"
             ],
             "keywords": [
                 "Electron",
                 "React",
                 "React Router",
-                "Refactoring"
+                "Refactoring",
+                "Github Releases",
+                "CircleCI"
             ],
-            "startDate": "2023-07",
+            "startDate": "2022-01",
             "endDate": "2023-12"
         },
         {
-            "name": "Electron Application Upgrade",
-            "entity": "Custom Ink",
-            "description": "I took ownership of the Electron and React application that powered the direct-to-garment (digital) printing process. Starting in my first year, I updated it from Electron 5 to Electron 20, React 16 to React 20, Material UI pre-1.0 to v5, and created a plan and guidelines for keeping it up to date, as well as enumerated up to date best practices.<br>Additionally, I automated the release process by creating Windows and Mac builds in CircleCI and automating the Windows releases to our release server using release-it to automatically generate Github releases.",
-            "highlights": [
-                "Performed a major, breaking upgrade that remained invisible to end users",
-                "Formulated plan for modernizing the legacy codebase for easier future maintenance",
-                "Utilized CircleCI and Github Releases to automate the build and deploy process"
-            ],
-            "keywords": [
-                "Electron",
-                "React",
-                "Javascript",
-                "CircleCI",
-                "MaterialUI",
-                "MUI"
-            ],
-            "startDate": "2022-01",
-            "endDate": "2022-06"
-        },
-        {
-            "name": "Auto Cart Builder",
+            "name": "Production Prioritization System",
             "entity":"Custom Ink",
             "description": "I wrote the new algorithm for prioritizing orders in the screenprinting process and as part of a team, overhauled the process for 20% increase in efficiency, a significant increase in our \"delivered error-free, on-time\" metrics, and near-elimination of facility-created \"rush\" orders.<br>The new process selected orders to batch together on a cart based on numerous factors, including number of screens needed, completion deadline, number of colors, and more.\n\nImpact: $440k annual production cost savings",
             "highlights": [
@@ -113,7 +96,7 @@
     "skills": [
         {
             "name": "C++",
-            "level": "Functional",
+            "level": "Foundational",
             "keywords": [
                 "Make",
                 "Ninja",
@@ -131,9 +114,11 @@
         },
         {
             "name": "Ruby",
-            "level": "Advanced",
+            "level": "Master",
             "keywords": [
-                "Rails"
+                "Rails",
+                "Minitest",
+                "Rspec"
             ]
         },
         {
@@ -144,12 +129,18 @@
                 "Vue",
                 "Electron",
                 "NodeJS",
-                "Webpack"
+                "Webpack",
+                "NodeJS",
+                "Jest",
+                "Mocha"
             ]
         },
         {
             "name": "Python",
-            "level": "Advanced"
+            "level": "Advanced",
+            "keywords": [
+                "Pytest"
+            ]
         },
         {
             "name": "CSS",
@@ -172,26 +163,6 @@
             ]
         },
         {
-            "name": "Test Driven Development",
-            "level": "Master",
-            "keywords": [
-                "Jest",
-                "PHPUnit",
-                "Rspec",
-                "Minitest",
-                "Pytest"
-            ]
-        },
-        {
-            "name": "CI/CD",
-            "level": "Advanced",
-            "keywords": [
-                "CircleCI",
-                "Travis CI",
-                "Github Actions"
-            ]
-        },
-        {
             "name": "Operating Systems",
             "level": "Master",
             "keywords": [
@@ -201,13 +172,16 @@
             ]
         },
         {
-            "name": "Containers",
+            "name": "Infrastructure & DevOps",
             "level": "Advanced",
             "keywords": [
                 "Docker",
                 "Dev Containers",
                 "Kubernetes",
-                "Infrastructure as Code"
+                "Infrastructure as Code",
+                "CircleCI",
+                "Travis CI",
+                "Github Actions"
             ]
         }
     ]

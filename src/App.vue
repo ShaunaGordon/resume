@@ -6,13 +6,16 @@
 
     <projects-section v-if="resume.projects" :projects="resume.projects"></projects-section>
 
-    <publications-section v-if="resume.publications" :publications="resume.publications"></publications-section>
+    <publications-section v-if="resume.publications" :publications="resume.publications" class="no-print"></publications-section>
 
-    <hire-me v-if="resume.basics" :basics="resume.basics"></hire-me>
+    <education-section v-if="resume.education" :schools="resume.education"></education-section>
+
+    <hire-me v-if="resume.basics" :basics="resume.basics" class="no-print"></hire-me>
 </template>
 
 <script setup>
 import { onBeforeMount, ref } from 'vue';
+import EducationSection from './components/sections/Education.vue';
 import HeaderSection from './components/sections/Header.vue';
 import HireMe from './components/sections/HireMe.vue';
 import IntroSection from './components/sections/Intro.vue';
