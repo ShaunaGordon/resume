@@ -1,16 +1,21 @@
 <template>
-    <header-section v-if="resume.basics" :basics="resume.basics"></header-section>
-    <intro-section v-if="resume.basics" :data="resume.basics"></intro-section>
+    <div class="screen">
+        <header-section v-if="resume.basics" :basics="resume.basics"></header-section>
+        <intro-section v-if="resume.basics" :data="resume.basics"></intro-section>
 
-    <work-section v-if="resume.work" :work="resume.work" :basics="resume.basics"></work-section>
+        <work-section v-if="resume.work" :work="resume.work" :basics="resume.basics"></work-section>
 
-    <projects-section v-if="resume.projects" :projects="resume.projects"></projects-section>
+        <projects-section v-if="resume.projects" :projects="resume.projects"></projects-section>
 
-    <publications-section v-if="resume.publications" :publications="resume.publications"></publications-section>
+        <publications-section v-if="resume.publications" :publications="resume.publications"></publications-section>
 
-    <education-section v-if="resume.education" :schools="resume.education"></education-section>
+        <education-section v-if="resume.education" :schools="resume.education"></education-section>
 
-    <hire-me v-if="resume.basics" :basics="resume.basics"></hire-me>
+        <hire-me v-if="resume.basics" :basics="resume.basics"></hire-me>
+    </div>
+    <div class="print">
+        <print-friendly :resume="resume"></print-friendly>
+    </div>
 </template>
 
 <script setup>
@@ -19,6 +24,7 @@ import EducationSection from './components/sections/Education.vue';
 import HeaderSection from './components/sections/Header.vue';
 import HireMe from './components/sections/HireMe.vue';
 import IntroSection from './components/sections/Intro.vue';
+import PrintFriendly from './components/sections/PrintFriendly.vue';
 import ProjectsSection from './components/sections/Projects.vue';
 import PublicationsSection from './components/sections/Publications.vue';
 import WorkSection from './components/sections/Experience.vue';

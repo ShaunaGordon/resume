@@ -183,6 +183,6 @@ details {
   margin: var(--gutter-ultra-wide) var(--gutter-wide);
 }
 
-.print-only {
+.print {
   display: none;
 }
