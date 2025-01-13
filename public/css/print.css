@@ -1,17 +1,40 @@
-@import url('./variables.css');
+@import url("./variables.css");
 
 .screen {
-    display: none;
+  display: none;
 }
 
 .print {
-    display: contents;
+  display: contents;
+}
+
+h1 {
+  text-align: center;
 }
 
 h3 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
+}
+
+.horiz {
+  display: flex;
+  justify-content: space-evenly;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+li {
+  &:empty {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 4px;
+  }
 }

@@ -7,7 +7,7 @@
       </header>
       <nav>
           <ul>
-              <li v-for="(item, i) in basics?.profiles" :key="i" :class="networks[item.network.toLowerCase()].print ? '' : 'no-print'">
+              <li v-for="(item, i) in basics?.profiles" :key="i">
                   <a :href="item.url" target="_blank">
                       <i :class="getProfileIcon(item.network.toLowerCase())"></i>{{ item.network }}
                   </a>
@@ -20,7 +20,7 @@
 <script setup>
 import { useProfiles } from '../../mixins/profiles';
 
-const { networks, getProfileIcon } = useProfiles();
+const { getProfileIcon } = useProfiles();
 
 const { basics } = defineProps(['basics']);
 

@@ -2,11 +2,13 @@ export const useDateUtils = () => {
     const isCurrent = (date, cutoff = 5) => !date || Date.parse(date) >= Date.parse((new Date()).getFullYear() - cutoff);
 
     const toWordMonthFormat = (rawDate) => {
-        const date = Date.parse(rawDate);
+        if(!rawDate) return;
+
+        const date = new Date(Date.parse(rawDate));
 
         const options = {
-            month: 'long',
-            year: 'long'
+            month: 'numeric',
+            year: 'numeric'
         };
 
         return date.toLocaleString('default', options);
