@@ -16,7 +16,7 @@
 <script setup>
 import WorkCard from '../support/WorkCard.vue';
 
-import { useProfiles } from '../../mixins/profiles';
+import { useProfiles } from '../../utils/profiles';
 const { getProfile } = useProfiles();
 
 const { work, basics } = defineProps(['work', 'basics']);

@@ -19,10 +19,10 @@
 <script setup>
 import WorkCardBody from './WorkCardBody.vue';
 
-import { useDateUtils } from '../../mixins/dateUtils';
+import { useDateUtils } from '../../utils/dateUtils';
 const { isCurrent } = useDateUtils();
 
-import { useIcons } from '../../mixins/icons';
+import { useIcons } from '../../utils/icons';
 const { getTechClass } = useIcons();
 
 const { item } = defineProps(['item']);

@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { useProfiles } from '../../mixins/profiles';
+import { useProfiles } from '../../utils/profiles';
 
 const { getProfileIcon } = useProfiles();
 

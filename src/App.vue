@@ -29,7 +29,7 @@ import ProjectsSection from './components/sections/Projects.vue';
 import PublicationsSection from './components/sections/Publications.vue';
 import WorkSection from './components/sections/Experience.vue';
 
-import { resumes, getResume } from './loadResume.js';
+import { resumes, getResume } from './utils/loadResume.js';
 
 const resume = ref({});
 

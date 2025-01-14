@@ -45,7 +45,7 @@
 </template>
 
 <script setup>
-import { useMarkdown } from '../../mixins/markdown';
+import { useMarkdown } from '../../utils/markdown';
 
 const { fromInlineMarkdown } = useMarkdown();
 

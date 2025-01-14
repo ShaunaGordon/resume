@@ -7,7 +7,7 @@ export const useDateUtils = () => {
         const date = new Date(Date.parse(rawDate));
 
         const options = {
-            month: 'numeric',
+            month: 'short',
             year: 'numeric'
         };
 

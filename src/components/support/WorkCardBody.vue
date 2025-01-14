@@ -20,8 +20,8 @@
 </template>
 
 <script setup>
-import { useIcons } from '../../mixins/icons';
-import { useMarkdown } from '../../mixins/markdown';
+import { useIcons } from '../../utils/icons';
+import { useMarkdown } from '../../utils/markdown';
 
 const { getTechClass } = useIcons();
 const { fromMarkdown, fromInlineMarkdown } = useMarkdown();
