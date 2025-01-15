@@ -113,7 +113,11 @@
                 "Developed custom business applications using .NET, PHP, and JavaScript",
                 "Implemented database solutions using MySQL and MSSQL",
                 "Created automated testing frameworks and continuous integration pipelines"
-            ]
+            ],
+            "tech": {
+                "php": "PHP",
+                "javascript": "Javascript"
+            }
         }
     ]
 }

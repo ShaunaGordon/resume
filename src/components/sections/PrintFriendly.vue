@@ -19,7 +19,7 @@
 
     <h2 class="section-title">Skills</h2>
     <ul>
-        <li></li>
+        <li class="skill-entry" v-for="(skill, i) in getSkills(resume?.skills)" :key="i">{{ skill.name }}: {{ skill.level }}</li>
     </ul>
 
     <h2 class="section-title">Experience</h2>
@@ -63,10 +63,18 @@ const props = defineProps(['resume']);
 import { useProfiles } from '../../utils/profiles';
 import { useMarkdown } from '../../utils/markdown';
 import { useDateUtils } from '../../utils/dateUtils';
+import { useSkills } from '../../utils/skills';
+import { onMounted, ref } from 'vue';
 
 const { networks, getProfileIcon } = useProfiles();
 const { fromMarkdown, fromInlineMarkdown } = useMarkdown();
 const { toWordMonthFormat } = useDateUtils();
+const { getSkills } = useSkills();
+
+onMounted(() => {
+    getSkills(props.resume.skills)
+})
+
 </script>
 
 <style scoped>
