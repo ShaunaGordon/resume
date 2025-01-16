@@ -1,4 +1,9 @@
 :root {
+  /*
+    Base variables, adapted in later media queries. This makes it super easy to
+    make adjustments and adaptations later on, such as when I layered dark theme
+    and print theme on. I do so love modern CSS.
+  */
     --color-primary: #f0f0ec;
     --color-primary-light: #fcfbf8;
     --color-secondary: #333f4c;
@@ -10,9 +15,11 @@
     --font-body: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     --font-header: 'Forum', Helvetica, Arial, sans-serif;
 
+    --font-size-base: 18px;
     --font-size-h1: 6rem;
     --font-size-h2: 4rem;
     --font-size-h3: 2rem;
+    --font-size-h4: 1.5rem;
 
     --box-shadow: 3px 3px 5px 0 rgba(0,0,0,.08);
 
@@ -23,6 +30,17 @@
     --gutter-ultra-wide: calc(var(--gutter-normal) * 3);
 
     @media screen and (prefers-color-scheme: dark) {
+      /*
+        Yay, dark theme! I started with inverting my light theme, to see what it
+        looked like. It turned out to be pretty good on its own, but found a few
+        color shifts to work better in the dark context. I still preferred darker
+        card backgrounds, for example, and liked the green for links, instead of
+        wine. This did end up with the slight oddity of --color-accent-light being
+        a lightened version of --color-accent-secondary instead of -primary, and
+        --color-primary-light actually being darker than --color-primary, but it's
+        not a big deal, all things considered. In some ways, it kind of makes sense
+        that they're inverted from the light theme. Naming things is hard.
+      */
       --color-primary: #111318;
       --color-primary-light: #080b13;
       --color-secondary: #c0b0a0;
@@ -31,10 +49,27 @@
       --color-accent-secondary: #a5969d;
       --color-background-highlight: color-mix(in srgb, var(--color-accent-light), transparent 90%);
 
-      --box-shadow: 2px 2px 8px 0 rgba(255,255,255,.05);
+      /*
+        Generally speaking, box-shadows in dark mode is discouraged, but I found this
+        adds a subtle depth to the cards, without making it look like it's glowing.
+      */
+      --box-shadow: 2px 2px 8px -4px rgba(255,255,255,.05);
     }
 
     @media print {
+      /*
+        The goal here is to make a more "standard" resume from the same data.
+        Changing the variables alone gets us a good 70% of the way there, without
+        having to remake the stylesheet. We'll then use a print stylesheet to handle
+        the things that need more adaptation.
+
+        Contemporary resumes are pretty minimal and aren't these fancy artistic things,
+        so we drop off a lot of the stylistic elements, background colors, etc. We want
+        to make it black and white friendly, first and foremost, then layer on a bit of
+        accent color that translates well back to greytones, so they stay nice when
+        printed from a black and white printer, because we don't know what the recipient
+        might be printing it on.
+      */
       --color-primary: #ffffff;
       --color-primary-light: var(--color-primary);
       --color-secondary: #333333;
@@ -44,8 +79,19 @@
 
       --box-shadow: 0;
 
-      --font-size-h1: 4rem;
-      --font-size-h2: 2rem;
-      --font-size-h3: 1.2rem;
+      --font-size-base: 13px;
+      --font-size-h1: 2.99rem;
+      --font-size-h2: 1.98rem;
+      --font-size-h3: 1.14rem;
+      --font-size-h4: .71rem;
+
+      --font-body: Helvetica, Arial, sans-serif;
+      --font-header: Helvetica, Arial, sans-serif;
+
+      --gutter-normal: .5rem;
+      --gutter-narrow: calc(var(--gutter-normal) / 2);
+      --gutter-mid-wide: calc(var(--gutter-normal) * 1.5);
+      --gutter-wide: calc(var(--gutter-normal) * 2);
+      --gutter-ultra-wide: calc(var(--gutter-normal) * 3);
     }
 }

@@ -2,19 +2,25 @@
     "comment": "Volunteer work. May or may not be specialized for the field, or may cross fields.",
     "volunteer": [
         {
-            "organization": "Open 3D Foundation",
-            "position": "O3DE Maintainer, Documentation Specialist, Community Manager, SIG Docs Co-Chair",
+            "entity": "Open 3D Foundation",
+            "name": "O3DE Maintainer, Documentation Specialist, Community Manager, SIG-Docs Co-Chair",
             "url": "https://o3de.org/",
             "startDate": "2024-02-01",
-            "summary": "I provided significant contributions to the Open 3D Engine (O3DE) open source project and community, including source code bugfixes, documentation curating, and engaging with the community in the project's Discord server. Additionally, I took on duties of a primary maintainer for the O3DE documentation site, and began the process of updating the underlying Hugo static site generator, streamlining the architecture to encourage more community contribution, and reviewed and merged issues and pull requests in Github. I also helped revive Special Interest Group (SIG) and lead the biweekly SIG meetings to encourage more docs participation and contribution.",
+            "summary": "Leading globally distributed documentation team and community",
+            "description": "Led the expansion of the Documentation and Community Special Interest Group (SIG-Docs) for the Open 3D Engine (O3DE) open source project and foundation by organizing and leading SIG meetings, maintaining the SIG roadmap for maintenance and improvement of the documentation and the website on which it's hosted. Brought and kept the underlying site and tooling up to date, to avoid issues with deprecated and obsolete parts, and streamlined the repository to encourage content contributors. Led releases in sync with O3DE to ensure up-to-date documentation with the engine. Also moderated community Discord server for conduct compliance and dispute resolution as part of a moderation team.",
             "highlights": [
-                "Took point on updating Hugo site",
-                "Contributed to documentation and code",
-                "Engaged in community Discord server",
-                "Lead biweekly SIG meeting",
-                "Engaged in intiatives to encourage more docs contribution",
-                "Oversee release of docs with new versions of O3DE"
-            ]
+                "Led Special Interest Group (SIG) for documentation and community engagement",
+                "Maintain and modernize Hugo-based documentation system",
+                "Coordinate with international contributors through Discord and GitHub",
+                "Manage asynchronous collaboration across multiple time zones"
+            ],
+            "tech": {
+                "hugo": "Hugo",
+                "netlify": "Netlify",
+                "github": "GitHub/GitHub Actions",
+                "bash": "Shell Scripting",
+                "discord": "Discord"
+            }
         }
     ]
 }

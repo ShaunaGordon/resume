@@ -2,37 +2,18 @@
     "comment": "Job history. Shouldn't change, but keeping in its own to avoid importing unnecessarily if it does.",
     "work": [
         {
-            "entity": "Open 3D Engine",
-            "name": "SIG-Docs Co-Chair",
-            "volunteer": true,
-            "url": "https://o3de.org",
-            "startDate": "2024-04",
-            "description": "Led the expansion of the Documentation and Community Special Interest Group (SIG-Docs) for the Open 3D Engine (O3DE) open source project and foundation by organizing and leading SIG meetings, maintaining the SIG roadmap for maintenance and improvement of the documentation and the website on which it's hosted. Brought and kept the underlying site and tooling up to date, to avoid issues with deprecated and obsolete parts, and streamlined the repository to encourage content contributors. Led releases in sync with O3DE to ensure up-to-date documentation with the engine.",
-            "highlights": [
-                "Brought SIG-Docs back to active status after more than a year of dormancy",
-                "Upgraded underlying Hugo static site generator and build pipeline",
-                "Split API docs and Hugo theme from main docs repository to encourage content contributors and streamline all contributions",
-                "Managed concerted efforts for core architectural improvements"
-            ],
-            "tech": {
-                "hugo": "Hugo",
-                "netlify": "Netlify",
-                "github": "GitHub/GitHub Actions",
-                "bash": "Shell Scripting"
-            }
-        },
-        {
             "entity": "Genome Studios",
             "name": "Principal Software Engineer",
             "url": "https://genomestudios.ca/",
             "startDate": "2024-01",
+            "summary": "Technical architect for distributed game development studio, collaborating with team members across North America",
             "description": "Helped establish a small development studio in the gaming industry by working closely with studio founder to architect and implement technical projects, including games, supplemental engine utilities, engine features and bug fixes, and others. Worked with the Open 3D Engine (O3DE) community to submit contributions back to the project.",
             "highlights": [
-                "Provided guidance on organization and engineering direction",
-                "Contributed to Open 3D Engine (O3DE) open source project on behalf of the company",
-                "Made code changes to game engine to facilitate game production",
-                "Aided in technical solution design for game mechanics",
-                "Built complementary tools for desktop or web to help grow the O3DE community and Genome's name within it"
+                "Designed and implemented technical solutions for game development workflows",
+                "Led collaboration with open source gaming engine community",
+                "Developed supplementary tools using modern web technologies",
+                "Directed technical solution design and engineering strategy",
+                "Collaborated synchronously and asynchronously with international development team"
             ],
             "tech": {
                 "cplusplus": "C++",
@@ -56,12 +37,14 @@
             "url": "https://www.customink.com",
             "startDate": "2021-12",
             "endDate": "2023-12",
+            "summary": "Led development in fully distributed team, collaborating with engineering teams across US and Czech Republic",
             "description": "Developed and maintained custom software to support the in-house printing facilities (IHP). Worked closely with management and user stakeholders to build software that met users' needs and made their work more efficient, while interfacing with the hardware used in the screenprinting and direct-to-garment (DTG, digital) printing process.",
             "highlights": [
-                "Implemented changes with an impact of $650k in annual savings",
-                "Took ownership of software fundamental to the DTG process",
-                "Worked across teams and roles to plan and implement process and quality of life improvements",
-                "Experimented on ways to create better technological solutions to applicable problems"
+                "Implemented technical solutions resulting in $650k annual cost savings through process optimization",
+                "Developed new order prioritization algorithm achieving 20% efficiency increase in production workflows",
+                "Modernized legacy Electron application through major version upgrades (Electron 5 to 20, React 16 to 20)",
+                "Spearheaded deployment notification automation project, designing architecture and implementing core notification components",
+                "Maintained strong team cohesion through effective communication practices"
             ],
             "tech": {
                 "ruby": "Ruby",
@@ -76,36 +59,16 @@
             }
         },
         {
-            "entity": "Proof Group",
-            "name": "Affiliate Software Engineer",
-            "url": "https://www.proofgeist.com",
-            "startDate": "2018-11",
-            "endDate": "2021-11",
-            "description": "Helped manage the custom Python/Django portions of client's FileMaker-backed web application.Create a component library system that took React, Vue, or Svelt components and created self-contained Web Components for both general web use and use inside FileMaker.",
-            "highlights": [
-                "Researched and developed a component library and build tool that could take Vue, React, or Svelt components and output self-contained, vanilla Web Components that could be used either in standard web applications, or within FileMaker's environment (which required additional processing to make all of the component's dependencies self-contained)."
-            ],
-            "tech": {
-                "python": "Python",
-                "django": "Django",
-                "github": "GitHub",
-                "nodejs": "Node"
-            }
-        },
-        {
-            "entity": "Rocket Code",
+            "entity": "Rocket Code/Brand Value Accelerator",
             "name": "Senior Backend Engineer",
             "startDate": "2016-10",
             "endDate": "2018-02",
             "description": "Develop custom integrations between Shopify and other platforms using PHP. Work with front end developers to ensure proper data and data shape for front end work. Develop custom tools with PHP, Laravel, and VueJS that included Shopify integrations. Create and maintain Ruby Shopify checkout and cart scripts.",
             "highlights": [
-                "Worked closely with Front-End Engineers to expand Shopify's capabilities",
-                "Built custom API-based integrations between platforms",
-                "Wrote Ruby-based Shopify checkout and line item scripts to modify cart behavior",
-                "Used queue systems to handle imports of large datasets into Shopify and other APIs",
-                "Planned and documented API endpoints using Swagger/OpenAPI",
-                "Piloted new techniques, technologies, and learning resources for the team",
-                "Provided culture guidance/feedback to CEO during acquisition of Rocket Code"
+                "Architected and implemented custom Shopify integration platform handling millions in transactions",
+                "Designed scalable ETL processes for large dataset synchronization between enterprise systems",
+                "Created API documentation standards and implemented OpenAPI/Swagger specifications",
+                "Collaborated across distributed offices in Columbus and San Diego"
             ],
             "tech": {
                 "php": "PHP",
@@ -126,11 +89,33 @@
             "name": "Engineer, GoExpo Division",
             "startDate": "2014",
             "endDate": "2015",
+            "summary": "Developed and maintained event management software in fully remote position",
             "description": "",
+            "highlights": [
+                "Implemented features for interactive trade show floor mapping and space allocation",
+                "Built vendor booth assignment and management functionality using PHP/Laravel",
+                "Contributed to platform allowing event planners to efficiently organize large-scale trade shows",
+                "Collaborated with distributed development team to maintain and enhance core platform features"
+            ],
             "tech": {
                 "php": "PHP",
                 "laravel": "Laravel",
                 "mysql": "MySQL",
+                "javascript": "Javascript"
+            }
+        },
+        {
+            "entity": "Previous Roles",
+            "name": "Software Engineer",
+            "startDate": "2008",
+            "endDate": "2014",
+            "highlights": [
+                "Developed custom business applications using .NET, PHP, and JavaScript",
+                "Implemented database solutions using MySQL and MSSQL",
+                "Created automated testing frameworks and continuous integration pipelines"
+            ],
+            "tech": {
+                "php": "PHP",
                 "javascript": "Javascript"
             }
         }

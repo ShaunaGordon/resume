@@ -1,50 +1,101 @@
-@import url('./variables.css');
+@import url("./variables.css");
 
-.no-print, .old {
-    display: none;
+.screen {
+  display: none;
 }
 
-.print-only {
-    display: block;
+.print {
+  display: contents;
 }
 
-a {
-    text-decoration: none;
-
-    &::after {
-        content:": " attr(href);
-    }
+h1 {
+  text-align: center;
 }
 
-header {
-    & > p {
-        display: none;
-    }
+.horiz {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: var(--gutter-normal) 0;
+
+  li {
+      list-style-type: none;
+  }
 }
 
-details {
-    height: fit-content;
-
-    &::details-content {
-        display: contents;
-    }
-
-    summary {
-        display: none;
-    }
+.links, .summary {
+  margin-bottom: var(--gutter-wide);
 }
 
-#top {
-    nav {
-        max-width: 45rem;
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: var(--gutter-wide);
+  margin-bottom: var(--gutter-normal);
+  border-bottom: 1px solid var(--color-accent-light);
+}
 
-        ul {
-            display: block;
-            padding-left: 0;
+.skill-entry {
+  li {
+    list-style-type: disc;
+  }
+}
 
-            li {
-                text-align: left;
-            }
-        }
-    }
+.job-entry {
+  margin-bottom: var(--gutter-wide);
+}
+
+.job-title {
+  font-weight: bold;
+  margin-bottom: var(--gutter-narrow);
+}
+
+.company-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--gutter-narrow);
+}
+
+.company {
+  font-weight: bold;
+}
+
+ul {
+  margin-top: var(--gutter-narrow);
+  margin-bottom: var(--gutter-normal);
+  padding-left: var(--gutter-wide);
+
+  li {
+      margin-bottom: var(--gutter-narrow);
+  }
+}
+
+.education-entry {
+  margin-bottom: var(--gutter-mid-wide);
+
+  .school {
+      font-weight: bold;
+      margin-bottom: var(--gutter-narrow);
+  }
+
+  p {
+      margin: var(--gutter-narrow) 0;
+  }
+}
+
+h1, h2, h3 {
+  margin-bottom: var(--gutter-narrow);
+}
+
+ul {
+  margin: var(--gutter-narrow) 0;
+}
+
+.job-entry, .education-entry {
+  margin-bottom: var(--gutter-normal);
+}
+
+.job-entry, .education-entry, .skill-entry, .project-entry {
+  break-inside: avoid;
 }
