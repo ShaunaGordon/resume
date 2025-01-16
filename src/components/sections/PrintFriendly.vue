@@ -18,9 +18,15 @@
     <div v-if="resume?.basics?.summary" v-html="fromMarkdown(resume?.basics?.summary)" class="summary"></div>
 
     <h2 class="section-title">Skills</h2>
-    <ul>
-        <li class="skill-entry" v-for="(skill, i) in getSkills(resume?.skills)" :key="i">{{ skill.name }}: {{ skill.level }}</li>
-    </ul>
+    <div class="skill-entry" v-for="(level, i) in getSkillLevels()" :key="i">
+        <h3>{{ level }}</h3>
+        <ul>
+            <li v-for="(items, category) in resume?.skills?.[level.toLowerCase()]" :key="category">
+                <strong>{{ category }}: </strong>
+                {{ items.join(', ') }}
+            </li>
+        </ul>
+    </div>
 
     <h2 class="section-title">Experience</h2>
     <div v-for="(job, i) in resume?.work" :key="i" class="job-entry">
@@ -38,16 +44,18 @@
     </div>
 
     <h2 class="section-title">Projects</h2>
-    <div v-for="(project, i) in resume?.projects" :key="i" class="project-entry">
-        <h3>{{ project.name }}</h3>
-        <div class="company-line">
-            <span class="company">{{ project.entity }}</span>
-            <span class="date">{{ toWordMonthFormat(project.startDate) }} - {{ toWordMonthFormat(project.endDate) || 'Ongoing' }}</span>
+    <template v-for="(project, i) in resume?.projects" :key="i">
+        <div class="project-entry" v-if="isCurrent(project.startDate)">
+            <h3>{{ project.name }}</h3>
+            <div class="company-line">
+                <span class="company">{{ project.entity }}</span>
+                <span class="date">{{ toWordMonthFormat(project.startDate) }} - {{ toWordMonthFormat(project.endDate) || 'Ongoing' }}</span>
+            </div>
+            <ul>
+                <li v-for="(item, i) in project.highlights" :key="i" v-html="fromInlineMarkdown(item)"></li>
+            </ul>
         </div>
-        <ul>
-            <li v-for="(item, i) in project.highlights" :key="i" v-html="fromInlineMarkdown(item)"></li>
-        </ul>
-    </div>
+    </template>
 
     <h2 class="section-title">Education</h2>
     <div v-for="(school, i) in resume?.education" :key="i" class="education-entry">
@@ -64,15 +72,15 @@ import { useProfiles } from '../../utils/profiles';
 import { useMarkdown } from '../../utils/markdown';
 import { useDateUtils } from '../../utils/dateUtils';
 import { useSkills } from '../../utils/skills';
-import { onMounted, ref } from 'vue';
+import { onMounted } from 'vue';
 
 const { networks, getProfileIcon } = useProfiles();
 const { fromMarkdown, fromInlineMarkdown } = useMarkdown();
-const { toWordMonthFormat } = useDateUtils();
-const { getSkills } = useSkills();
+const { toWordMonthFormat, isCurrent } = useDateUtils();
+const { getSkillLevels } = useSkills();
 
 onMounted(() => {
-    getSkills(props.resume.skills)
+    getSkillLevels(props?.resume?.skills)
 })
 
 </script>

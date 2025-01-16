@@ -35,6 +35,12 @@ h1 {
   border-bottom: 1px solid var(--color-accent-light);
 }
 
+.skill-entry {
+  li {
+    list-style-type: disc;
+  }
+}
+
 .job-entry {
   margin-bottom: var(--gutter-wide);
 }
@@ -88,4 +94,8 @@ ul {
 
 .job-entry, .education-entry {
   margin-bottom: var(--gutter-normal);
+}
+
+.job-entry, .education-entry, .skill-entry, .project-entry {
+  break-inside: avoid;
 }

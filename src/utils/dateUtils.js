@@ -1,17 +1,14 @@
+import dayjs from "dayjs";
+
 export const useDateUtils = () => {
-    const isCurrent = (date, cutoff = 5) => !date || Date.parse(date) >= Date.parse((new Date()).getFullYear() - cutoff);
+    const isCurrent = (date, cutoff = 5) => !date || dayjs(date, 'YYYY-MM') >= (dayjs().year() - cutoff);
 
     const toWordMonthFormat = (rawDate) => {
         if(!rawDate) return;
 
-        const date = new Date(Date.parse(rawDate));
+        const date = dayjs(rawDate, 'YYYY-MM');
 
-        const options = {
-            month: 'short',
-            year: 'numeric'
-        };
-
-        return date.toLocaleString('default', options);
+        return date.format('MMMM YYYY')
     }
 
     return { isCurrent, toWordMonthFormat };
