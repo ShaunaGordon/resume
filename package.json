@@ -21,44 +21,16 @@
     "vue": "^3.5.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
     "@stylistic/eslint-plugin-js": "^2.11.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^10.1.0",
-    "eslint": "^9.16.0",
-    "eslint-plugin-vue": "^9.23.0",
+    "eslint": "^9.19.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.14.0",
     "prettier": "^3.2.5",
     "vite": "^6.0.3",
     "vite-plugin-vue-devtools": "^7.3.1"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/standard",
-      "plugin:vue/vue3-essential",
-      "plugin:@stylistic/js"
-    ],
-    "rules": {
-      "@stylistic/js/no-trailing-spaces": [
-        2,
-        {
-          "skipBlankLines": true
-        }
-      ],
-      "@stylistic/js/semi": 0,
-      "@stylistic/js/indent": [
-        "error",
-        4
-      ],
-      "@stylistic/js/space-before-function-paren": [
-        2,
-        {
-          "anonymous": "never",
-          "named": "never",
-          "asyncArrow": "always"
-        }
-      ]
-    }
   },
   "browserslist": [
     "> 2%",
