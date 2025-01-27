@@ -30,6 +30,6 @@ import { useMarkdown } from '../../utils/markdown';
 const { getTechClass } = useIcons();
 const { fromMarkdown } = useMarkdown();
 
-const props = defineProps(['publications']);
+defineProps(['publications']);
 
 </script>

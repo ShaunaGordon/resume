@@ -7,14 +7,33 @@ import stylisticJs from '@stylistic/eslint-plugin-js'
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {files: ["**/*.{js,mjs,cjs,vue}"]},
-  {languageOptions: { globals: globals.browser }},
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        process: 'readonly'
+      }
+    }
+  },
   pluginJs.configs.recommended,
   ...pluginVue.configs["flat/essential"],
   {
     plugins: {
-    '@stylistic/js': stylisticJs
+      '@stylistic/js': stylisticJs
     },
     rules: {
+      "vue/multi-word-component-names": ["error", {
+        "ignores": [
+          'Education',
+          'Experience',
+          'Header',
+          'Intro',
+          'Projects',
+          'Publications',
+          'Skills',
+          'Donut'
+        ]
+      }],
       "@stylistic/js/no-trailing-spaces": [
         2,
         {

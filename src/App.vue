@@ -34,7 +34,7 @@ import { resumes, getResume } from './utils/loadResume.js';
 const resume = ref({});
 
 onBeforeMount(() => {
-    getResume(resumes.engineering).then(result => resume.value = result);
+  getResume(resumes.engineering).then(result => resume.value = result);
 });
 
 </script>

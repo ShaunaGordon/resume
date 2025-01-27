@@ -1,4 +1,5 @@
 {
     "gitdoc.enabled": false,
-    "pieces.cloudCapabilities": "Blended"
+    "pieces.cloudCapabilities": "Blended",
+    "editor.tabSize": 2
 }

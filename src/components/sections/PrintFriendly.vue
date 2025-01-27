@@ -80,7 +80,7 @@ const { toWordMonthFormat, isCurrent } = useDateUtils();
 const { getSkillLevels } = useSkills();
 
 onMounted(() => {
-    getSkillLevels(props?.resume?.skills)
+  getSkillLevels(props?.resume?.skills)
 })
 
 </script>

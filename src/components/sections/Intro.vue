@@ -12,5 +12,5 @@ import { useMarkdown } from '../../utils/markdown';
 
 const { fromMarkdown } = useMarkdown();
 
-const props = defineProps(['data']);
+defineProps(['data']);
 </script>
