@@ -5,6 +5,8 @@
 </template>
 
 <script>
+/* As evidenced by the old Vue2 structure, this one is not currently in use. However, I'm leaving it here for demonstration of work with D3.js. */
+
 import * as d3 from 'd3';
 
 export default {

@@ -34,6 +34,13 @@ import { resumes, getResume } from './utils/loadResume.js';
 const resume = ref({});
 
 onBeforeMount(() => {
+  /*
+    We load the resume data before mount, because of the asynchronous nature of
+    the loading method. This gives us the earliest possible loading point for the
+    initial data, minimizing the amount of time the page doesn't show anything.
+    Since it's all text, this should make this loading process invisible to all
+    but the slowest connections, or nearly so.
+  */
   getResume(resumes.engineering).then(result => resume.value = result);
 });
 

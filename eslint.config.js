@@ -52,7 +52,8 @@ export default [
           "named": "never",
           "asyncArrow": "always"
         }
-      ]
+      ],
+      'no-unsafe-negation': false
     }
   }
 ];
