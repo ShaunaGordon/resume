@@ -59,7 +59,7 @@
     @media print {
       /*
         The goal here is to make a more "standard" resume from the same data.
-        Changing the variables alone gets us a good 70% of the way there, without
+        Changing the variables alone got us a good 70% of the way there, without
         having to remake the stylesheet. We'll then use a print stylesheet to handle
         the things that need more adaptation.
 
@@ -79,6 +79,11 @@
 
       --box-shadow: 0;
 
+      /*
+        Font sizes here were derived with some ratio math, which got me pretty close
+        to what I was going for. I then fiddled with divisions to get the overall sizes
+        right for a sheet of paper, since the original math made the text way too big.
+      */
       --font-size-base: 13px;
       --font-size-h1: 2.99rem;
       --font-size-h2: 1.98rem;
@@ -88,6 +93,10 @@
       --font-body: Helvetica, Arial, sans-serif;
       --font-header: Helvetica, Arial, sans-serif;
 
+      /*
+       The derivative values are the same as --gutter-normal, but I was seeing oddities
+       with it actually applying, so I just replicated that bit here for sanity's sake.
+      */
       --gutter-normal: .5rem;
       --gutter-narrow: calc(var(--gutter-normal) / 2);
       --gutter-mid-wide: calc(var(--gutter-normal) * 1.5);
