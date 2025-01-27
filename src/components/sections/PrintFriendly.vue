@@ -67,6 +67,21 @@
 </template>
 
 <script setup>
+/**
+ * This is the ATS-friendly print layout. Under most circumstances,
+ * I wouldn't do it this way, but the web structure was making the
+ * scanner choke. Parts of the sections would be read as other parts
+ * or be skipped entirely for no discernable reason. In an effort to
+ * remove as many variables as possible, I stripped the structure
+ * _way_ down and went as barebones as possible to achieve the layout
+ * while still being able to automate the generation.
+ *
+ * In App.vue, we then have two blocks, one with the `screen` class
+ * and one with `print`. Their respective stylesheets set the display
+ * of each accordingly, so this structure benefits from the initial
+ * resume loading, but is only visible when printing.
+ */
+
 const props = defineProps(['resume']);
 import { useProfiles } from '../../utils/profiles';
 import { useMarkdown } from '../../utils/markdown';

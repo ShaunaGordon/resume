@@ -19,6 +19,18 @@
 </template>
 
 <script setup>
+/*
+  Having the different sections as separate components is mostly a stylistic
+  decision, though it does also make maintenance a bit easier. By having each
+  section in its own component, we're able to add or remove components as needed
+  or desired. It also made it easier to update the page one section at a time
+  when switching from Vue 2 to Vue 3.
+
+  "Section" is tacked onto the name of most of them, because Vue now requires
+  components to be two words to avoid colliding with HTML tag names, but the
+  components were created a while ago, and I don't actually like having to tack on
+  a repetitive word like that, so we just alias it here, and leave the file names alone.
+*/
 import { onBeforeMount, ref } from 'vue';
 import EducationSection from './components/sections/Education.vue';
 import HeaderSection from './components/sections/Header.vue';
