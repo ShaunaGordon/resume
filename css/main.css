@@ -66,6 +66,10 @@ a {
   }
 }
 
+strong {
+  font-weight: bold;
+}
+
 details {
   height: 2.1rem;
   padding: var(--gutter-narrow) auto;
