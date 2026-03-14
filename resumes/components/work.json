@@ -87,9 +87,9 @@
         {
             "entity": "Core-Apps",
             "name": "Engineer, GoExpo Division",
-            "startDate": "2014",
-            "endDate": "2015",
-            "summary": "Developed and maintained event management software in fully remote position",
+            "startDate": "2014-04",
+            "endDate": "2015-12",
+            "summary": "Developed and maintained event management software in fully remote position.",
             "description": "",
             "highlights": [
                 "Implemented features for interactive trade show floor mapping and space allocation",
@@ -105,10 +105,30 @@
             }
         },
         {
+            "entity": "Fahlgren Mortine",
+            "name": "Software Engineer",
+            "startDate": "2012-10",
+            "endDate": "2014-03",
+            "summary": "Scoped and built web applications and sites to support marketing campaigns for clients including Kay Jewelers and the Franklin Park Conservatory, as well as internal projects including a WordPress (PHP) to Kentico (.Net) migration tool - https://github.com/ShaunaGordon/wp2k .",
+            "description": "",
+            "highlights": [
+                "Designed and built WP2K, a .Net tool to migrate WordPress blogs to Kentico",
+                "Used cutting-edge web technology to build rich interactivity in the company website"
+            ],
+            "tech": {
+                "php": "PHP",
+                "laravel": "Laravel",
+                "dot-net": ".Net",
+                "csharp": "C#",
+                "microsoftsqlserver": "MSSQL Server",
+                "javascript": "Javascript"
+            }
+        },
+        {
             "entity": "Previous Roles",
             "name": "Software Engineer",
             "startDate": "2008",
-            "endDate": "2014",
+            "endDate": "2012",
             "highlights": [
                 "Developed custom business applications using .NET, PHP, and JavaScript",
                 "Implemented database solutions using MySQL and MSSQL",
@@ -116,7 +136,8 @@
             ],
             "tech": {
                 "php": "PHP",
-                "javascript": "Javascript"
+                "javascript": "Javascript",
+                "dot-net": ".Net"
             }
         }
     ]
