@@ -15,7 +15,7 @@
             "countryCode": "US",
             "region": "Ohio",
             "relocate": {
-                "exclusive": true,
+                "exclusive": false,
                 "assistance": "Relocation assistance appreciated, but not required.",
                 "to": [
                     {

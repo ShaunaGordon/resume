@@ -7,11 +7,11 @@
             "url": "https://genomestudios.ca/",
             "startDate": "2024-01",
             "summary": "Technical architect for distributed game development studio, collaborating with team members across North America",
-            "description": "Helped establish a small development studio in the gaming industry by working closely with studio founder to architect and implement technical projects, including games, supplemental engine utilities, engine features and bug fixes, and others. Worked with the Open 3D Engine (O3DE) community to submit contributions back to the project.",
+            "description": "Worked closely with the founder to establish a small development studio in the gaming industry. Architected and implemented technical projects, including games, supplemental engine utilities, engine features and bug fixes, and others. Worked with the Open 3D Engine (O3DE) community to submit contributions back to the project.",
             "highlights": [
                 "Designed and implemented technical solutions for game development workflows",
                 "Led collaboration with open source gaming engine community",
-                "Developed supplementary tools using modern web technologies",
+                "Developed Opal using modern tools and technologies",
                 "Directed technical solution design and engineering strategy",
                 "Collaborated synchronously and asynchronously with international development team"
             ],
@@ -28,7 +28,8 @@
                 "python": "Python",
                 "qt": "Qt",
                 "vitejs": "ViteJS",
-                "vuejs": "VueJS"
+                "vuejs": "VueJS",
+                "tauri": "Tauri"
             }
         },
         {

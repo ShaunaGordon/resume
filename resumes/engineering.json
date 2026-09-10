@@ -17,6 +17,30 @@
   },
   "projects": [
     {
+      "name": "Opal",
+      "entity": "Genome Studios",
+      "description": "Opal is an all-in-one project management tool for Open 3D Engine (O3DE), making it easy to get started with game development within the engine. Opal walks the user through getting their system set up with the required prerequisites, then installing their first engine version and creating their first project. The user can also easily manage their gem library, adding functionality to O3DE and their projects as needed.\n\nAs Principal Engineer, I architected and built the entire application and deployment pipeline as a new greenfield project to its release, deciding the tech and setting the standards for its ongoing development and maintenance. In accordance with company AI policy, I created a workflow of human-centered, agent-assisted development that enabled the project to maintain a consistent velocity, while keeping the code maintainable and the application stable.",
+      "highlights": [
+        "Evaluated and chose the technology in which to build the application",
+        "Used agentic tooling to accelerate code creation while keeping close tabs on the code being written",
+        "Built agent-assisted workflows and agent skills as part of a larger initiative to create the scaffolding for future engineering team scaling",
+        "Built the deployment pipeline using Gitlab CI to automate building and distributing releases"
+      ],
+      "keywords": [
+        "Tauri",
+        "Rust",
+        "Claude",
+        "Vue",
+        "TypeScript",
+        "Gitlab CI",
+        "Architecture",
+        "Greenfield"
+      ],
+      "startDate": "2026-01",
+      "endDate": "2026-09",
+      "website": "https://opallauncher.com/"
+    },
+    {
       "name": "Deployment Notification Automation Initiative",
       "entity": "Custom Ink",
       "description": "As a side-effect of a facility slowdown situation, there was an appetite for better deployment notifications. However, the interim solution that had been implemented was very manual and cumbersome. So, I collaborated with several engineering managers of other teams to come up with and orchestrate the implementation of an automated notification system.\n\nAs part of a long-term, cross-team initiative, we came up with a plan to use Github pull requests to provide the content and the trigger of a notification that would describe in plain language what the change was doing and why, the level of risk for the deploy, and link to supplemental outputs of the development process (including the issue tracking item, project pitches, architectural decision records, Slack discussions, and anything else relevant). The automated system was then intended to take the pull request contents, display a portion of it on a unified dashboard, with a link to the full pull request for technical stakeholders, and send an email out to those who wanted it.\n\nAs of the time of my departure, we had taken several steps to bringing the pull requests into alignment with this vision, including working out with a broader collection of engineers a \"bring your own process\" for assessing the risk of a change while using the same output chart to serve as a common \"language\" to stakeholders, and were evaluating our existing tools and past projects to see what existing work we could leverage in this new vision.",
